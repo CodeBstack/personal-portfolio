@@ -41,7 +41,7 @@ const ProjectsPage: React.FunctionComponent<
                 consectetur. Aliquam donec justo
                 fames euismod consectetur. Enim
                 parturient pulvinar semper neque.
-                Id ac pretium leo non. Fringilla
+                Id ac pretium leo non. Fringill
               </p>
             </div>
 
