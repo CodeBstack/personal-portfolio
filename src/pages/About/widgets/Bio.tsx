@@ -5,7 +5,7 @@ const Bio: React.FunctionComponent<
 > = () => {
   return (
     <div className="flex flex-col gap-10 lg:flex-row lg:gap-8">
-      <p className="font-Calibre1 text-text-primary text-base md:text-xl max-w-[450px]">
+      <p className="font-Calibre1 text-center md:text-left text-text-primary text-base md:text-xl max-w-[450px]">
         Lorem ipsum dolor sit amet consectetur.
         Aliquam donec justo fames euismod
         consectetur. Enim parturient pulvinar

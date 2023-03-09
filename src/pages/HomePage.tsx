@@ -1,4 +1,3 @@
-
 interface HomePageProps {}
 
 const HomePage: React.FunctionComponent<
@@ -27,9 +26,18 @@ const HomePage: React.FunctionComponent<
           currently focused on creating
           accessible, human-centered products.
         </p>
-      </div>
 
-     
+        <div className="flex mt-6 items-center font-SF1 text-base text-[#A8B2D1] md:hidden">
+          Email me @&nbsp;
+          <a
+            href="mailto: ssamuelolumide@gmail.com"
+            className="hover:text-secondary rotate-0"
+          >
+            ssamuelolumide@gmail.com
+          </a>
+          {/* <div className="h-px w-24 ml-10 bg-[#a8b2d1]"></div> */}
+        </div>
+      </div>
     </section>
   );
 };

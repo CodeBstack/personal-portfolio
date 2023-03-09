@@ -1,3 +1,4 @@
+import { Tooltip } from '@mui/material';
 import { useState } from 'react';
 import Bio from './widgets/Bio';
 import Education from './widgets/Education';
@@ -50,13 +51,17 @@ const AboutPage: React.FunctionComponent<
           {/* mobile  */}
           <div className="flex flex-wrap justify-between md:hidden">
             {steps.map((value) => (
-              <button
-                onClick={() =>
-                  setPresentStep(value.id)
-                }
-                // disabled={presentStep < value.id}
-                key={value.id}
-                className={`flex h-[30px] w-[30px] items-center justify-center
+              <Tooltip
+                title={value.title}
+                placement="top"
+              >
+                <button
+                  onClick={() =>
+                    setPresentStep(value.id)
+                  }
+                  // disabled={presentStep < value.id}
+                  key={value.id}
+                  className={`flex h-[30px] w-[30px] items-center justify-center
                 text-[18px] text-text-primary font-SF2 transition-all duration-150 ease-in-out
                  ${
                    presentStep === value.id &&
@@ -64,9 +69,10 @@ const AboutPage: React.FunctionComponent<
                  } 
                  
                 rounded-[8px] `}
-              >
-                {value.id}
-              </button>
+                >
+                  {value.id}
+                </button>
+              </Tooltip>
             ))}
           </div>
           {/* desktop  */}
@@ -85,7 +91,6 @@ const AboutPage: React.FunctionComponent<
                 // disabled={presentStep < value.id}
                 className="flex items-center gap-4"
               >
-               
                 <span
                   className={`font-SF2 border-l px-5 py-3 border-[#233554] text-[16px] font-medium  ${
                     presentStep === value.id

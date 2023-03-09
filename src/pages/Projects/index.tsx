@@ -33,6 +33,30 @@ const ProjectsPage: React.FunctionComponent<
           />
         ))}
       </div>
+
+      <div className="mt-60 text-center">
+        <h2 className="font-Calibre2 text-text-200 text-2xl text-[32px]">
+          Other Projects Worth Noting
+        </h2>
+
+        <a
+          href="#"
+          className="font-SF1 text-secondary mt-2"
+        >
+          View my archive
+        </a>
+
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          {Array(6)
+            .fill(6)
+            .map((_, i) => (
+              <div
+                key={i}
+                className={` bg-[#233554] min-h-[300px] max-wpx]`}
+              ></div>
+            ))}
+        </div>
+      </div>
     </section>
   );
 };
