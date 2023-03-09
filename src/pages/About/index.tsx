@@ -85,19 +85,7 @@ const AboutPage: React.FunctionComponent<
                 // disabled={presentStep < value.id}
                 className="flex items-center gap-4"
               >
-                {/* <span
-                  className={`flex h-[42px] w-[42px] items-center justify-center rounded-16
-                 text-lg font-medium text-white
-                 ${
-                   presentStep === value.id
-                     ? 'bg-primary text-grey_60'
-                     : presentStep > value.id
-                     ? 'bg-grey_20'
-                     : 'bg-grey_60 text-grey_30'
-                 }`}
-                >
-                  {value.id}
-                </span> */}
+               
                 <span
                   className={`font-SF2 border-l px-5 py-3 border-[#233554] text-[16px] font-medium  ${
                     presentStep === value.id
@@ -113,13 +101,11 @@ const AboutPage: React.FunctionComponent<
         </div>
         <div className="mt-4 w-full md:mt-0">
           {/* Displays the component that corresponds with the presentStep */}
-          {/* <div className="flex max-w-[600px] flex-1 flex-cl gap-0 rounded-24 bg-white pb-[40px] "> */}
           {
             stepComponents[
               presentStep as keyof StepComponents
             ]
           }
-          {/* </div> */}
         </div>
       </div>
     </section>

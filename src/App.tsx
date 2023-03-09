@@ -1,6 +1,6 @@
 import React from 'react';
 import InstagramIcon from './components/Vectors/InstagramIcon';
-import TwitterIcon from './components/TwitterIcon';
+import TwitterIcon from './components/Vectors/TwitterIcon';
 import LinkedInIcon from './components/Vectors/LinkedInIcon';
 import AboutPage from './pages/About';
 import ContactPage from './pages/ContactPage';
@@ -12,13 +12,15 @@ import GithubIcon from './components/Vectors/GithubIcon';
 
 function App() {
   return (
-    <div className="relative text-text-primary mx-auto w-[90%] max-w-[1440px]">
+    <div className="relative text-text-primary ">
       <NavBar />
-      <HomePage />
-      <AboutPage />
-      <ProjectsPage />
-      <ResumePage />
-      <ContactPage />
+      <div className="mx-auto w-[90%] max-w-[1440px]">
+        <HomePage />
+        <AboutPage />
+        <ProjectsPage />
+        <ResumePage />
+        <ContactPage />
+      </div>
       <div className="flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a href="mailto: ssamuelolumide@gmail.com">
           ssamuelolumide@gmail.com

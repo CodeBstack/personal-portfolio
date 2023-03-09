@@ -4,7 +4,7 @@ const Bio: React.FunctionComponent<
   BioProps
 > = () => {
   return (
-    <div className="flex gap-8">
+    <div className="flex flex-col gap-10 lg:flex-row lg:gap-8">
       <p className="font-Calibre1 text-text-primary text-base md:text-xl max-w-[450px]">
         Lorem ipsum dolor sit amet consectetur.
         Aliquam donec justo fames euismod
@@ -25,7 +25,7 @@ const Bio: React.FunctionComponent<
       </p>
 
       <div
-        className="relative h-[269px] rounded-[8px] bg-secondary w-[292px] z-0 before:bg-[#D9D9D9] before:absolute before:-top-[18px] before:-right-[18px] before:rounded-[8px]
+        className=" self-center relative h-[269px] rounded-[8px] bg-secondary w-[292px] z-0 before:bg-[#D9D9D9] before:absolute before:-top-[18px] before:-right-[18px] before:rounded-[8px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
       ></div>
     </div>

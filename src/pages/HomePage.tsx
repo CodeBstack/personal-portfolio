@@ -13,14 +13,14 @@ const HomePage: React.FunctionComponent<
         <p className="font-SF2 mb-2.5 text-secondary md:mb-4 text-sm md:text-base">
           Hi, my name is
         </p>
-        <h1 className="font-Calibre3 trackin-[0.011em] text-nav-text text-4xl md:text-7xl">
+        <h1 className="font-Calibre3 trackin-[0.011em] text-nav-text text-5xl md:text-7xl">
           Samuel Olumide
         </h1>
-        <h1 className="font-Calibre3 tra11em] text-text-primary text-4xl md:text-7xl">
+        <h1 className="font-Calibre3 tra11em] text-text-primary text-5xl md:text-7xl">
           I bring designs to life.{' '}
         </h1>
 
-        <p className="max-w-[540px] mt-2.5 font-Calibre1 text-sm  text-text-primary md:text-xl md:mt-4">
+        <p className="max-w-[540px] mt-2.5 font-Calibre1 text-base  text-text-primary md:text-xl md:mt-4">
           I'm a Software Engineer who specializes
           in creating exceptional digital
           experiences. At Native Brand, I'm

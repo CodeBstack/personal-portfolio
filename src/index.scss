@@ -73,3 +73,7 @@ code {
     src: local("SFMonoHeavy"),
         url("./assets/fonts/SFMonoHeavy.ttf") format("truetype");
 }
+
+.backDrop {
+    backdrop-filter: blur(6px) saturate(3.5);
+}
