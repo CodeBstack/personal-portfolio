@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html,
+body,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "CalibreLight", sans-serif;
+    //   font-family: "SFMonoMedium", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0A192F;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+    //   font-family: "Bai Jamjuree", sans-serif;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    /*Can be any text*/
+    src: local("CalibreLight"),
+        url("./assets/fonts/CalibreLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CalibreMedium";
+    /*Can be any text*/
+    src: local("CalibreMedium"),
+        url("./assets/fonts/CalibreMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CalibreBold";
+    /*Can be any text*/
+    src: local("CalibreBold"),
+        url("./assets/fonts/CalibreBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SFMonoLight";
+    /*Can be any text*/
+    src: local("SFMonoLight"),
+        url("./assets/fonts/SFMonoLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SFMonoMedium";
+    /*Can be any text*/
+    src: local("SFMonoMedium"),
+        url("./assets/fonts/SFMonoMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SFMonoHeavy";
+    /*Can be any text*/
+    src: local("SFMonoHeavy"),
+        url("./assets/fonts/SFMonoHeavy.ttf") format("truetype");
+}

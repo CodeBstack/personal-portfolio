@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./assets/fonts/SFMonoLight.ttf"
+import "./assets/fonts/SFMonoMedium.ttf"
+import "./assets/fonts/SFMonoBold.ttf"
+import "./assets/fonts/CalibreRegular.ttf"
+import "./assets/fonts/CalibreMedium.ttf"
+import "./assets/fonts/CalibreBold.ttf"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +18,3 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
