@@ -41,7 +41,8 @@ const NavBar: React.FunctionComponent<
   return (
     <div
       className={`${
-        navBg && 'bg-[rgba(131, 9, 0, 0.05)] backDrop'
+        navBg &&
+        'bg-[rgba(131, 9, 0, 0.05)] backDrop'
       } z-[100] px-[5%]  sticky top-0 transition-all duration-300 ease-linear py-4 md:py-9 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
     >
       <Logo />

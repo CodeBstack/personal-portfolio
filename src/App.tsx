@@ -12,6 +12,7 @@ import GithubIcon from './components/Vectors/GithubIcon';
 import CustomCursor from './components/CustomCursor';
 import Cursor from './components/Cursor';
 import ContactPage from './pages/ContactPage';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <ProjectsPage />
         <ResumePage />
         {/* <ContactPage /> */}
-        <ContactPage/>
+        <ContactPage />
+        {/* <Footer /> */}
       </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a href="mailto: ssamuelolumide@gmail.com">
