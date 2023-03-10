@@ -55,7 +55,7 @@ const Cursor = () => {
   return (
     <>
       <motion.div
-        className="cursor"
+        className="cursor hidden md:block"
         variants={variants}
         animate={cursorVariant}
       />
