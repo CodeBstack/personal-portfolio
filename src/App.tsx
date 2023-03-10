@@ -9,11 +9,14 @@ import NavBar from './pages/Navbar';
 import ProjectsPage from './pages/Projects';
 import ResumePage from './pages/ResumePage';
 import GithubIcon from './components/Vectors/GithubIcon';
+import CustomCursor from './components/CustomCursor';
+import Cursor from './components/Cursor';
 
 function App() {
   return (
     <div className="relative text-text-primary ">
       <NavBar />
+      <Cursor />
       <div className="mx-auto w-[90%] max-w-[1440px]">
         <HomePage />
         <AboutPage />

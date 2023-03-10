@@ -20,10 +20,13 @@ const HomePage: React.FunctionComponent<
         </h1>
 
         <p className="max-w-[540px] mt-2.5 font-Calibre1 text-base  text-text-primary md:text-xl md:mt-4">
-          I'm a Software Engineer who specializes
-          in creating exceptional digital
-          experiences. At Native Brand, I'm
-          currently focused on creating
+          I'm a{' '}
+          <span className="text-secondary">
+            Software Engineer
+          </span>{' '}
+          who specializes in creating exceptional
+          digital experiences. At Native Brand,
+          I'm currently focused on creating
           accessible, human-centered products.
         </p>
 

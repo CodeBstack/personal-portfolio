@@ -12,10 +12,6 @@ const GithubIcon = ({ color }: Props) => {
       <Tooltip
         title="GitHub"
         placement="right-start"
-        sx={{
-          color: 'red !important',
-          backgroudColor: 'white !important',
-        }}
       >
         <svg
           width="24"
