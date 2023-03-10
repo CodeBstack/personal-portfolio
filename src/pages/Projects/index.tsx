@@ -1,5 +1,3 @@
-import GithubIcon from '../../components/Vectors/GithubIcon';
-import LinkOutIcon from '../../components/Vectors/LinkOutIcon';
 import { projects } from './data';
 import EachProject from './EachProject';
 

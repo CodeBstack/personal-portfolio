@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./style.scss";
 import CustomCursorContext from "./context/CustomCursorContext";
+import CursorIcon from "../Vectors/CursorIcon";
 
 const CustomCursor = () => {
   const { type } = useContext(CustomCursorContext);
@@ -71,7 +72,8 @@ const CustomCursor = () => {
   return (
     <div className={`cursor-wrapper ${type}`}>
       <div className="main-cursor " ref={mainCursor}>
-        <div className="main-cursor-background"></div>
+        {/* <div className="main-cursor-background"></div> */}
+        <CursorIcon/>
       </div>
       <div className="secondary-cursor" ref={secondaryCursor}>
         <div className="cursor-background"></div>

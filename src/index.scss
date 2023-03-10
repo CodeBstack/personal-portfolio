@@ -76,7 +76,7 @@ code {
 }
 
 .backDrop {
-    backdrop-filter: blur(6px) saturate(3.5);
+    backdrop-filter: blur(6px) saturate(2.5);
 }
 
 .css-ja5taz-MuiTooltip-tooltip{
@@ -86,11 +86,12 @@ code {
     font-size: 12px !important;
 }
 .cursor {
-    background-color: #CCD6F6;
-    height: 32px;
-    width: 32px;
+    // background-color: #CCD6F6;
+    height: 72px;
+    width: 72px;
     border-radius: 50%;
     position: fixed;
+    border: 1px solid #d6d6d6;
     top: 0;
     left: 0;
     pointer-events: none;
