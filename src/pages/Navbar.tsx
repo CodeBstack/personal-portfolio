@@ -5,12 +5,50 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
 import { useState, useEffect } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-interface NavBarProps {}
+type LinkProps = {
+  page: string;
+  pos: string;
+  selectedPage: string;
+  setSelectedPage: React.Dispatch<
+    React.SetStateAction<string>
+  >;
+};
+const Link = ({
+  page,
+  pos,
+  selectedPage,
+  setSelectedPage,
+}: LinkProps) => {
+  const lowerCasePage = page.toLowerCase();
+  return (
+    <AnchorLink
+      // href={link.link}
+      className="flex gap-2 items-center hover:text-secondary"
+      href={`#${lowerCasePage}`}
+      onClick={() =>
+        setSelectedPage(lowerCasePage)
+      }
+    >
+      <span className="text-secondary">
+        {pos}{' '}
+      </span>
+      {page}
+    </AnchorLink>
+  );
+};
+
+interface NavBarProps {
+  selectedPage: string;
+  setSelectedPage: React.Dispatch<
+    React.SetStateAction<string>
+  >;
+}
 
 const NavBar: React.FunctionComponent<
   NavBarProps
-> = () => {
+> = ({ selectedPage, setSelectedPage }) => {
   const [isDarkMode, setIsDarkMode] =
     useState<boolean>(true);
   const [navBg, setNavBg] =
@@ -43,21 +81,20 @@ const NavBar: React.FunctionComponent<
       className={`${
         navBg &&
         'bg-[rgba(131, 9, 0, 0.05)] backDrop'
-      } z-[100] px-[5%]  sticky top-0 transition-all duration-300 ease-linear py-4 md:py-9 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
+      } z-[100] px-[5%] w-full  fixed top-0 transition-all duration-300 ease-linear py-4 md:py-9 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
     >
       <Logo />
       <div className="hidden gap-10 items-center md:flex">
-        {NavLinks.map((link, i) => (
-          <a
+        {NavLinks.filter(
+          (link) => link.link !== selectedPage
+        ).map((link, i) => (
+          <Link
             key={i}
-            href={link.link}
-            className="flex gap-2 items-center hover:text-secondary"
-          >
-            <span className="text-secondary">
-              {link.pos}
-            </span>
-            {link.text}
-          </a>
+            page={link.text}
+            pos={`0${i + 1}.`}
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
         ))}
         <IconButton
           onClick={() =>
@@ -103,22 +140,27 @@ export default NavBar;
 const NavLinks = [
   {
     pos: '01.',
-    text: 'About',
-    link: '#about',
+    text: 'Home',
+    link: 'home',
   },
   {
     pos: '02.',
-    text: 'Projects',
-    link: '#projects',
+    text: 'About',
+    link: 'about',
   },
   {
     pos: '03.',
-    text: 'Resume',
-    link: '#resume',
+    text: 'Projects',
+    link: 'projects',
   },
   {
     pos: '04.',
+    text: 'Resume',
+    link: 'resume',
+  },
+  {
+    pos: '05.',
     text: 'Contact',
-    link: '#contact',
+    link: 'contact',
   },
 ];

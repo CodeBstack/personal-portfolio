@@ -1,30 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
 import InstagramIcon from './components/Vectors/InstagramIcon';
 import TwitterIcon from './components/Vectors/TwitterIcon';
 import LinkedInIcon from './components/Vectors/LinkedInIcon';
 import AboutPage from './pages/About';
-// import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import NavBar from './pages/Navbar';
 import ProjectsPage from './pages/Projects';
 import ResumePage from './pages/ResumePage';
 import GithubIcon from './components/Vectors/GithubIcon';
-import CustomCursor from './components/CustomCursor';
-import Cursor from './components/Cursor';
 import ContactPage from './pages/ContactPage';
 import Footer from './pages/Footer';
+import { motion } from 'framer-motion';
 
 function App() {
+  const [selectedPage, setSelectedPage] =
+    useState<string>('home');
+
   return (
     <div className="relative text-text-primary ">
-      <NavBar />
+      <NavBar
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
       <div className="mx-auto w-[90%] max-w-[1440px]">
-        <HomePage />
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('home')
+          }
+        >
+          <HomePage />
+        </motion.div>
+
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('about')
+          }
+        >
+          <AboutPage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('projects')
+          }
+        >
+          <ProjectsPage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('resume')
+          }
+        >
+          <ResumePage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('contact')
+          }
+        >
+          <ContactPage />
+        </motion.div>
+        {/* <HomePage />
         <AboutPage />
         <ProjectsPage />
         <ResumePage />
-        {/* <ContactPage /> */}
-        <ContactPage />
+        <ContactPage /> */}
         {/* <Footer /> */}
       </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">

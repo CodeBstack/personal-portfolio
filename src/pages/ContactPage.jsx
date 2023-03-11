@@ -31,6 +31,7 @@
 // import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { Button } from "@mui/material";
 
 const ContactPage = () => {
     const {
@@ -169,11 +170,13 @@ const ContactPage = () => {
                     )}
 
                     <button
-                        className="p-5 mt-[30px] border border-secondary bg-transparent font-SF1 text-secondary rounded-[3px] text-sm self-center  hovered hover:text-white transition duration-500"
+                        className="p-5 cursor-none mt-[30px] border border-secondary bg-transparent font-SF1 text-secondary rounded-[3px] text-sm self-center hover:border-secondary transition duration-500"
                         type="submit"
                     >
                         Send Message
                     </button>
+
+                    {/* <Button variant='outlined' sx={{ width: 'fit-content' }}>Send Message</Button> */}
                 </form>
             </motion.div>
             {/* </div> */}

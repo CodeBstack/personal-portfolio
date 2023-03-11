@@ -31,7 +31,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="h-screen p-[10%] relative"
+      className="min-h-screen p-[10%] relative"
       id="about"
     >
       <div className="flex gap-4 items-center flex-col md:flex-row mb-12">

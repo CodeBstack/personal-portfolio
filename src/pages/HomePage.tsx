@@ -5,7 +5,7 @@ const HomePage: React.FunctionComponent<
 > = () => {
   return (
     <section
-      className="relative text-text-primary flex p-[10%] justify-centr items-centr h-screen"
+      className="relative text-text-primary flex px-[10%] justify-centr items-center h-screen"
       id="home"
     >
       <div>
