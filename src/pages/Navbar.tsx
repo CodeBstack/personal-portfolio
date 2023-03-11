@@ -83,11 +83,16 @@ const NavBar: React.FunctionComponent<
         'bg-[rgba(131, 9, 0, 0.05)] backDrop'
       } z-[100] px-[5%] w-full  fixed top-0 transition-all duration-300 ease-linear py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
     >
-      <Logo />
+      <AnchorLink
+        href={`#home`}
+        onClick={() =>
+          setSelectedPage('home')
+        }
+      >
+        <Logo />
+      </AnchorLink>
       <div className="hidden gap-10 items-center md:flex">
-        {NavLinks.filter(
-          (link) => link.link !== selectedPage
-        ).map((link, i) => (
+        {NavLinks.map((link, i) => (
           <Link
             key={i}
             page={link.text}
@@ -138,11 +143,6 @@ const NavBar: React.FunctionComponent<
 export default NavBar;
 
 const NavLinks = [
-  {
-    pos: '01.',
-    text: 'Home',
-    link: 'home',
-  },
   {
     pos: '02.',
     text: 'About',

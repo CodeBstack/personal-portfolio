@@ -72,8 +72,8 @@ const CustomCursor = () => {
   return (
     <div className={`cursor-wrapper h-0 ${type}`}>
       <div className="main-cursor " ref={mainCursor}>
-        {/* <div className="main-cursor-background"></div> */}
-        <CursorIcon/>
+        <div className="main-cursor-background"></div>
+        {/* <CursorIcon/> */}
       </div>
       <div className="secondary-cursor" ref={secondaryCursor}>
         <div className="cursor-background"></div>
