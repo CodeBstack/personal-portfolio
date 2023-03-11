@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'animate.css';
+
 *,
 html,
 body,
@@ -79,12 +81,13 @@ code {
     backdrop-filter: blur(6px) saturate(2.5);
 }
 
-.css-ja5taz-MuiTooltip-tooltip{
+.css-ja5taz-MuiTooltip-tooltip {
     background-color: #64FFDA !important;
     color: #0A192F !important;
     font-family: 'SFMonoMedium', sans-serif !important;
     font-size: 12px !important;
 }
+
 .cursor {
     // background-color: #CCD6F6;
     height: 72px;
@@ -96,4 +99,12 @@ code {
     left: 0;
     pointer-events: none;
     z-index: 10000;
-  }
+}
+
+.heading_2 {
+    animation: fadeIn 2s 3.4s backwards;
+}
+
+.anime_homepage_text {
+    animation: fadeIn 1s 3.5s backwards;
+}

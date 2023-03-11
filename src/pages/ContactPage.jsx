@@ -60,7 +60,7 @@ const ContactPage = () => {
                     hidden: { opacity: 0, x: 50 },
                     visible: { opacity: 1, x: 0 },
                 }}
-                className="text-center items-center flex gap-4 md:gap-6 flex-col mb-[60px]"
+                className="text-center items-center flex gap-4 md:gap-6 flex-col mb-[40px]"
             >
                 <div className="text-center items-center flex gap-4 md:gap-6 flex-col">
                     <p className="font-SF2 text-secondary text-base md:text-xl">
@@ -170,7 +170,7 @@ const ContactPage = () => {
                     )}
 
                     <button
-                        className="p-5 cursor-none mt-[30px] border border-secondary bg-transparent font-SF1 text-secondary rounded-[3px] text-sm self-center hover:border-secondary transition duration-500"
+                        className="px-4 py-2 cursor-none mt-[20px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
                         type="submit"
                     >
                         Send Message

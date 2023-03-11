@@ -19,7 +19,7 @@ export const projects: Projects[] = [
     ],
     layout: 'normal',
     projectDesc:
-      ' Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
+      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
     projectTitle: 'Advanced Calculator',
     projectRepoLink: '#',
     projectDemoLink: '#',
@@ -34,7 +34,7 @@ export const projects: Projects[] = [
     ],
     layout: 'reverse',
     projectDesc:
-      ' Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
+      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
     projectTitle: 'Weather Information',
     projectRepoLink: '#',
     projectDemoLink: '#',
@@ -49,9 +49,27 @@ export const projects: Projects[] = [
     ],
     layout: 'normal',
     projectDesc:
-      ' Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
+      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
     projectTitle: 'Project Dashboard',
     projectRepoLink: '#',
     projectDemoLink: '#',
   },
 ];
+
+export const projects2: Projects[] = Array(
+  6
+).fill({
+  id: 1,
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+  ],
+  layout: 'normal',
+  projectDesc:
+    'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
+  projectTitle: 'Advanced Calculator',
+  projectRepoLink: '#',
+  projectDemoLink: '#',
+});

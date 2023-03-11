@@ -22,49 +22,49 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mx-auto w-[90%] max-w-[1440px]">
-        <motion.div
-          onViewportEnter={() =>
-            setSelectedPage('home')
-          }
-        >
-          <HomePage />
-        </motion.div>
+      <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%] md:py-0 md:px-[10%]">
+        {selectedPage === 'resume' ? (
+          <motion.div
+            onViewportEnter={() =>
+              setSelectedPage('resume')
+            }
+          >
+            <ResumePage />
+          </motion.div>
+        ) : (
+          <>
+            <motion.div
+              onViewportEnter={() =>
+                setSelectedPage('home')
+              }
+            >
+              <HomePage />
+            </motion.div>
 
-        <motion.div
-          onViewportEnter={() =>
-            setSelectedPage('about')
-          }
-        >
-          <AboutPage />
-        </motion.div>
-        <motion.div
-          onViewportEnter={() =>
-            setSelectedPage('projects')
-          }
-        >
-          <ProjectsPage />
-        </motion.div>
-        <motion.div
-          onViewportEnter={() =>
-            setSelectedPage('resume')
-          }
-        >
-          <ResumePage />
-        </motion.div>
-        <motion.div
-          onViewportEnter={() =>
-            setSelectedPage('contact')
-          }
-        >
-          <ContactPage />
-        </motion.div>
-        {/* <HomePage />
-        <AboutPage />
-        <ProjectsPage />
-        <ResumePage />
-        <ContactPage /> */}
-        {/* <Footer /> */}
+            <motion.div
+              onViewportEnter={() =>
+                setSelectedPage('about')
+              }
+            >
+              <AboutPage />
+            </motion.div>
+            <motion.div
+              onViewportEnter={() =>
+                setSelectedPage('projects')
+              }
+            >
+              <ProjectsPage />
+            </motion.div>
+
+            <motion.div
+              onViewportEnter={() =>
+                setSelectedPage('contact')
+              }
+            >
+              <ContactPage />
+            </motion.div>
+          </>
+        )}
       </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a href="mailto: ssamuelolumide@gmail.com">
@@ -73,7 +73,7 @@ function App() {
         <div className="h-px w-24 ml-10 bg-[#a8b2d1]"></div>
       </div>
 
-      <div className="flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
+      <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
         <a href="#">
           <GithubIcon />
         </a>

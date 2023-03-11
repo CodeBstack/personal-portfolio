@@ -1,10 +1,11 @@
 import { Tooltip } from '@mui/material';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Bio from './widgets/Bio';
 import Education from './widgets/Education';
 import Experience from './widgets/Experience';
 import Passion from './widgets/Passion';
 import Skills from './widgets/Skills';
+import { motion } from 'framer-motion';
 interface AboutPageProps {}
 
 const AboutPage: React.FunctionComponent<
@@ -12,6 +13,14 @@ const AboutPage: React.FunctionComponent<
 > = () => {
   const [presentStep, setPresentStep] =
     useState<number>(1);
+  const [letterClass, setLetterClass] =
+    useState<string>('text-animate');
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  }, []);
 
   interface StepComponents {
     1: JSX.Element;
@@ -31,22 +40,44 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="min-h-screen p-[10%] relative"
+      className="min-h-screen md:py-[10%] relative mb-[44px] md:mb-0 "
       id="about"
     >
-      <div className="flex gap-4 items-center flex-col md:flex-row mb-12">
-        <div className="flex gap-6 items-center">
-          <h1 className="text-secondary text-[32px] font-SF2 ">
+      {/* <motion.div className="flex gap-4 items-center  mb-12 flex-wrap"> */}
+      <motion.div
+        className="flex gap-4 items-center  mb-9 md:mb-12 flex-wrap"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        <div className="flex gap-4 md:gap-6 items-center">
+          <h1 className="text-secondary text-[26px] md:text-[32px]  font-SF2 ">
             01.
           </h1>
-          <h1 className="text-text-200 text-[32px] font-SF3">
+          <h1 className="text-text-200 text-[26px] md:text-[32px] font-SF3">
             About Me
           </h1>
         </div>
-        <div className="h-px bg-[#CCD6F6] w-full max-w-[395px]"></div>
-      </div>
+        <div className="h-px bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
+      </motion.div>
 
-      <div className="mt-0 flex w-full flex-col p-2 md:flex-row md:justify-start md:gap-9 md:p-0">
+      {/* <div className="mt-0 flex w-full flex-col p-2 md:flex-row md:justify-start md:gap-9 md:p-0"> */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="mt-0 flex w-full flex-col md:flex-row md:justify-start md:gap-9 md:p-0"
+      >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
           <div className="flex flex-wrap justify-between md:hidden">
@@ -104,7 +135,7 @@ const AboutPage: React.FunctionComponent<
             ))}
           </div>
         </div>
-        <div className="mt-4 w-full md:mt-0">
+        <div className="mt-9 w-full md:mt-0">
           {/* Displays the component that corresponds with the presentStep */}
           {
             stepComponents[
@@ -112,7 +143,7 @@ const AboutPage: React.FunctionComponent<
             ]
           }
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

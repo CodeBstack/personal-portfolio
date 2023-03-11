@@ -1,7 +1,7 @@
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import DarkModeIcon from '../components/Vectors/DarkModeIcon';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '../components/Vectors/MenuIcon';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
 import { useState, useEffect } from 'react';
@@ -24,7 +24,6 @@ const Link = ({
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      // href={link.link}
       className="flex gap-2 items-center hover:text-secondary"
       href={`#${lowerCasePage}`}
       onClick={() =>
@@ -77,17 +76,15 @@ const NavBar: React.FunctionComponent<
   }, []);
 
   return (
-    <div
+    <nav
       className={`${
         navBg &&
         'bg-[rgba(131, 9, 0, 0.05)] backDrop'
-      } z-[100] px-[5%] w-full  fixed top-0 transition-all duration-300 ease-linear py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
+      } z-[100] px-[5%] w-full  sticky md:fixed top-0 transition-all duration-300 ease-linear py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[14px]`}
     >
       <AnchorLink
         href={`#home`}
-        onClick={() =>
-          setSelectedPage('home')
-        }
+        onClick={() => setSelectedPage('home')}
       >
         <Logo />
       </AnchorLink>
@@ -125,18 +122,19 @@ const NavBar: React.FunctionComponent<
         >
           {isNavOpened ? (
             <CloseIcon
-              fontSize="large"
-              sx={{ color: '#CCD6F6' }}
+              // fontSize="large"
+              sx={{
+                color: '#64FFDA',
+                width: '30px',
+                height: '30px',
+              }}
             />
           ) : (
-            <MenuIcon
-              fontSize="large"
-              sx={{ color: '#CCD6F6' }}
-            />
+            <MenuIcon />
           )}
         </IconButton>
       </div>
-    </div>
+    </nav>
   );
 };
 
