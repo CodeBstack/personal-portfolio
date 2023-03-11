@@ -41,7 +41,7 @@ const ContactPage = () => {
     } = useForm();
 
     const onSubmit = async (e) => {
-        // console.log("~ e", e);
+        console.log("~ e", e);
         // const isValid = await trigger();
         // if (!isValid) {
         e.preventDefault();
