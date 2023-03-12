@@ -90,6 +90,10 @@ const NavBar: React.FunctionComponent<
       </AnchorLink>
       <div className="hidden gap-10 items-center md:flex">
         {NavLinks.map((link, i) => (
+          // <>
+          // { i === 2 ?
+          //   <a href='#resume' target='_blank'>Resume</a>
+          //   :
           <Link
             key={i}
             page={link.text}
@@ -97,6 +101,8 @@ const NavBar: React.FunctionComponent<
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
+          // }
+          // </>
         ))}
         <IconButton
           onClick={() =>

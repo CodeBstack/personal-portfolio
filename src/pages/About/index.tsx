@@ -13,14 +13,6 @@ const AboutPage: React.FunctionComponent<
 > = () => {
   const [presentStep, setPresentStep] =
     useState<number>(1);
-  const [letterClass, setLetterClass] =
-    useState<string>('text-animate');
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 3000);
-  }, []);
 
   interface StepComponents {
     1: JSX.Element;
@@ -45,7 +37,7 @@ const AboutPage: React.FunctionComponent<
     >
       {/* <motion.div className="flex gap-4 items-center  mb-12 flex-wrap"> */}
       <motion.div
-        className="flex gap-4 items-center  mb-9 md:mb-12 flex-wrap"
+        className="flex gap-4 items-center md:mb-5 flex-wrap"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -66,7 +58,6 @@ const AboutPage: React.FunctionComponent<
         <div className="h-px bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
       </motion.div>
 
-      {/* <div className="mt-0 flex w-full flex-col p-2 md:flex-row md:justify-start md:gap-9 md:p-0"> */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -80,13 +71,13 @@ const AboutPage: React.FunctionComponent<
       >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
-          <div className="flex flex-wrap justify-between md:hidden">
+          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md::hidden my-7">
             {steps.map((value) => (
               <Tooltip
                 title={value.title}
                 placement="top"
               >
-                <button
+                {/* <button
                   onClick={() =>
                     setPresentStep(value.id)
                   }
@@ -102,6 +93,25 @@ const AboutPage: React.FunctionComponent<
                 rounded-[8px] `}
                 >
                   {value.id}
+                </button> */}
+                <button
+                  key={value.id}
+                  type="button"
+                  onClick={() =>
+                    setPresentStep(value.id)
+                  }
+                  // disabled={presentStep < value.id}
+                  className="flex"
+                >
+                  <span
+                    className={`font-SF2  px-5 pb-2 text-[16px] font-medium  ${
+                      presentStep === value.id
+                        ? 'border-b-[3px] border-secondary text-secondary'
+                        : 'text-text-primary'
+                    } `}
+                  >
+                    {value.title}
+                  </span>
                 </button>
               </Tooltip>
             ))}
@@ -135,7 +145,7 @@ const AboutPage: React.FunctionComponent<
             ))}
           </div>
         </div>
-        <div className="mt-9 w-full md:mt-0">
+        <div className="w-full">
           {/* Displays the component that corresponds with the presentStep */}
           {
             stepComponents[

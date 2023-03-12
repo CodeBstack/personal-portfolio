@@ -19,7 +19,7 @@ export const projects: Projects[] = [
     ],
     layout: 'normal',
     projectDesc:
-      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
+      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
     projectTitle: 'Advanced Calculator',
     projectRepoLink: '#',
     projectDemoLink: '#',
@@ -34,7 +34,7 @@ export const projects: Projects[] = [
     ],
     layout: 'reverse',
     projectDesc:
-      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
+      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
     projectTitle: 'Weather Information',
     projectRepoLink: '#',
     projectDemoLink: '#',
@@ -49,7 +49,7 @@ export const projects: Projects[] = [
     ],
     layout: 'normal',
     projectDesc:
-      'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
+      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
     projectTitle: 'Project Dashboard',
     projectRepoLink: '#',
     projectDemoLink: '#',

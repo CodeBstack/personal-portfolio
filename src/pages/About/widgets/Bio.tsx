@@ -23,11 +23,12 @@ const Bio: React.FunctionComponent<
         vitae. Posuere gravida dui cras at posuere
         sagittis. Enim in.
       </p>
-
-      <div
-        className=" self-centr flex-1 mx-auto relative min-h-[269px] min-w-[292px] rounded-[8px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[8px] before:-right-[8px] before:rounded-[8px]
+      <div className="flex-1  max-w-[450px]">
+        <div
+          className=" self-centr mx-auto md:mx-0 relative min-h-[269px] min-w-[292px] rounded-[8px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[8px] before:-right-[8px] before:rounded-[8px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-      ></div>
+        ></div>
+      </div>
     </div>
   );
 };

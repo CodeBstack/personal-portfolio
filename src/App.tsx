@@ -23,48 +23,49 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%] md:py-0 md:px-[10%]">
-        {selectedPage === 'resume' ? (
-          <motion.div
-            onViewportEnter={() =>
-              setSelectedPage('resume')
-            }
-          >
-            <ResumePage />
-          </motion.div>
-        ) : (
-          <>
-            <motion.div
-              onViewportEnter={() =>
-                setSelectedPage('home')
-              }
-            >
-              <HomePage />
-            </motion.div>
+        
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('home')
+          }
+        >
+          <HomePage />
+        </motion.div>
 
-            <motion.div
-              onViewportEnter={() =>
-                setSelectedPage('about')
-              }
-            >
-              <AboutPage />
-            </motion.div>
-            <motion.div
-              onViewportEnter={() =>
-                setSelectedPage('projects')
-              }
-            >
-              <ProjectsPage />
-            </motion.div>
-
-            <motion.div
-              onViewportEnter={() =>
-                setSelectedPage('contact')
-              }
-            >
-              <ContactPage />
-            </motion.div>
-          </>
-        )}
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('about')
+          }
+        >
+          <AboutPage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('projects')
+          }
+        >
+          <ProjectsPage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('resume')
+          }
+        >
+          <ResumePage />
+        </motion.div>
+        <motion.div
+          onViewportEnter={() =>
+            setSelectedPage('contact')
+          }
+        >
+          <ContactPage />
+        </motion.div>
+        {/* <HomePage />
+        <AboutPage />
+        <ProjectsPage />
+        <ResumePage />
+        <ContactPage /> */}
+        {/* <Footer /> */}
       </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a href="mailto: ssamuelolumide@gmail.com">

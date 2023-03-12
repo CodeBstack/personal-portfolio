@@ -9,13 +9,16 @@ import './assets/fonts/CalibreRegular.ttf';
 import './assets/fonts/CalibreMedium.ttf';
 import './assets/fonts/CalibreBold.ttf';
 import CustomCursor from './components/CustomCursor';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <CustomCursor />
-    <App />
+    <BrowserRouter>
+      <CustomCursor />
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

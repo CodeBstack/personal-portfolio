@@ -53,7 +53,7 @@ const Project = ({ data }: ProjectProps) => {
         </div>
 
         <div
-          className={`flex w-full mb-7 gap-6 items-center`}
+          className={`flex w-full mb-7 gap-x-6 flex-wrap gap-y-4 items-center`}
         >
           {data.skills?.map((skill, i) => (
             <p

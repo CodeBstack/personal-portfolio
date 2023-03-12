@@ -22,6 +22,7 @@ body,
 body {
     margin: 0;
     padding: 0;
+    // overflow: hidden;
     font-family: "CalibreLight", sans-serif;
     //   font-family: "SFMonoMedium", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -76,6 +77,25 @@ code {
     src: local("SFMonoHeavy"),
         url("./assets/fonts/SFMonoHeavy.ttf") format("truetype");
 }
+
+.noScrollBar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+  
+    &.white-scrollbar {
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
 
 .backDrop {
     backdrop-filter: blur(6px) saturate(2.5);

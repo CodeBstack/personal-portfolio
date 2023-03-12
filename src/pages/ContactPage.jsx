@@ -1,37 +1,6 @@
-// interface ContactPageProps {}
-
-// const ContactPage: React.FunctionComponent<
-//   ContactPageProps
-// > = () => {
-//   return (
-//     <section
-//       className="h-screen p-[10%] relative"
-//       id="contact"
-//     >
-//   <div className="text-center items-center flex gap-4 md:gap-6 flex-col">
-//     <p className="font-SF2 text-secondary text-base md:text-xl">
-//       <span className="mr-6">04.</span> What's
-//       Next?
-//     </p>
-//     <h1 className="font-SF3 text-text-200 text-4xl md:text-6xl">
-//       Get In Touch
-//     </h1>
-
-//     <p className=" w-full max-w-[300px] text-text-200 text-base md:text-xl">
-//       Got a question or proposal, or just want
-//       to say hello? Go ahead.
-//     </p>
-//   </div>
-//     </section>
-//   );
-// };
-
-// export default ContactPage;
-
-// import LineGradient from "../components/LineGradient";
+import StarIcon from '@mui/icons-material/Star';
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { Button } from "@mui/material";
 
 const ContactPage = () => {
     const {
@@ -49,7 +18,7 @@ const ContactPage = () => {
     };
 
     return (
-        <section id="contact" className="contact py-[10%]">
+        <section id="contact" className="contact pt-[10%]">
             {/* HEADINGS */}
             <motion.div
                 initial="hidden"
@@ -179,6 +148,26 @@ const ContactPage = () => {
                     {/* <Button variant='outlined' sx={{ width: 'fit-content' }}>Send Message</Button> */}
                 </form>
             </motion.div>
+
+            <div className="flex flex-col items-center mt-40 w-full ">
+                <p className="font-SF1 text-sm text-text-200 mb-2">
+                    Developed by Samuel Olumide
+                </p>
+                <div className="flex gap-2 items-center">
+                    <StarIcon
+                        fontSize='large'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                    <StarIcon
+                        fontSize='large'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                    <StarIcon
+                        fontSize='large'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                </div>
+            </div>
             {/* </div> */}
         </section>
     );
