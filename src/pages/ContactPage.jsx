@@ -139,7 +139,7 @@ const ContactPage = () => {
                     )}
 
                     <button
-                        className="px-4 py-2 cursor-none mt-[20px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
+                        className="px-4 py-2 cursor-none mt-[30px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
                         type="submit"
                     >
                         Send Message
@@ -150,10 +150,27 @@ const ContactPage = () => {
             </motion.div>
 
             <div className="flex flex-col items-center mt-40 w-full ">
-                <p className="font-SF1 text-sm text-text-200 mb-2">
+                <p className="font-SF1 text-xs md:text-sm text-text-200 mb-2">
                     Developed by Samuel Olumide
                 </p>
-                <div className="flex gap-2 items-center">
+                {/* MOBILE STARS */}
+                <div className="flex md:hidden gap-2 items-center">
+                    <StarIcon
+                        fontSize='medium'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                    <StarIcon
+                        fontSize='medium'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                    <StarIcon
+                        fontSize='medium'
+                        sx={{ color: '#64FFDA' }}
+                    />
+                </div>
+
+                {/* DESKTOP STARS */}
+                <div className="hidden md:flex gap-2 items-center">
                     <StarIcon
                         fontSize='large'
                         sx={{ color: '#64FFDA' }}

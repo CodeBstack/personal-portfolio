@@ -1,4 +1,8 @@
-import { projects, projects2 } from './data';
+import {
+  projects,
+  projects2,
+  truncateString,
+} from './data';
 import EachProject from './EachProject';
 import { motion } from 'framer-motion';
 import GithubIcon from '../../components/Vectors/GithubIcon';
@@ -48,7 +52,7 @@ const Project = ({ data }: ProjectProps) => {
           className={` rounded-[0px]  my-4 text-left`}
         >
           <p className="text-xl">
-            {data.projectDesc}
+            {truncateString(data.projectDesc, 70)}
           </p>
         </div>
 
@@ -124,7 +128,7 @@ const ProjectsPage: React.FunctionComponent<
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 md:flex flex-col gap-8 md:gap-[104px]"
+        className="grid sm:grid-cols-2 md:flex flex-col gap-5 md:gap-[104px]"
       >
         {projects.map((project) => (
           <EachProject
@@ -148,7 +152,7 @@ const ProjectsPage: React.FunctionComponent<
 
         {/* <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]"> */}
         <motion.div
-          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"

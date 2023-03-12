@@ -1,6 +1,7 @@
 import GithubIcon from '../../components/Vectors/GithubIcon';
 import LinkOutIcon from '../../components/Vectors/LinkOutIcon';
 import { motion } from 'framer-motion';
+import { truncateString } from './data';
 
 interface EachProjectProps {
   data: {
@@ -41,7 +42,10 @@ const EachProject: React.FunctionComponent<
             className={` rounded-[0px]  my-4 text-left`}
           >
             <p className="text-xl">
-              {data.projectDesc}
+              {truncateString(
+                data.projectDesc,
+                70
+              )}
             </p>
           </div>
 

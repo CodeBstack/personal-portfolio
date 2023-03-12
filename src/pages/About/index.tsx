@@ -37,7 +37,7 @@ const AboutPage: React.FunctionComponent<
     >
       {/* <motion.div className="flex gap-4 items-center  mb-12 flex-wrap"> */}
       <motion.div
-        className="flex gap-4 items-center md:mb-5 flex-wrap"
+        className="flex  gap-4 items-center md:mb-5 flex-wrap"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -71,7 +71,7 @@ const AboutPage: React.FunctionComponent<
       >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
-          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md::hidden my-7">
+          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md:hidden my-7">
             {steps.map((value) => (
               <Tooltip
                 title={value.title}

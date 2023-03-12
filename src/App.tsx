@@ -23,7 +23,6 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%] md:py-0 md:px-[10%]">
-        
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')
@@ -75,20 +74,67 @@ function App() {
       </div>
 
       <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
-        <a href="#">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GithubIcon />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <InstagramIcon />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TwitterIcon />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <LinkedInIcon />
         </a>
 
         <div className="h-px w-24 mt-16 rotate-90 bg-[#a8b2d1]"></div>
+      </div>
+
+      <div className="block md:hidden footer_socials ">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubIcon />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TwitterIcon />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon />
+        </a>
       </div>
     </div>
   );

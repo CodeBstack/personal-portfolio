@@ -8,6 +8,17 @@ interface Projects {
   projectDemoLink?: string;
 }
 
+export const truncateString = (
+  str = '',
+  num = 100
+) => {
+  if (str?.length > num) {
+    return str.slice(0, num) + '...';
+  } else {
+    return str;
+  }
+};
+
 export const projects: Projects[] = [
   {
     id: 1,
@@ -68,7 +79,7 @@ export const projects2: Projects[] = Array(
   ],
   layout: 'normal',
   projectDesc:
-    'Lorem sit amet cons. parturient pulvinar semper neque. c pretium ',
+    'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
   projectTitle: 'Advanced Calculator',
   projectRepoLink: '#',
   projectDemoLink: '#',
