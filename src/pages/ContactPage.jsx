@@ -146,7 +146,7 @@ const ContactPage = () => {
                     )}
 
                     <button
-                        className="px-4 py-2 cursor-none mt-[30px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
+                        className="px-4 py-2 mt-[30px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
                         type="submit"
                     >
                         Send Message
