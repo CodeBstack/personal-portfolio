@@ -98,7 +98,7 @@ const ProjectsPage: React.FunctionComponent<
 > = () => {
   return (
     <section
-      className="projects min-h-screen pt-[20%] md:py-[10%] relative mb-[44px] md:mb-0 "
+      className="projects min-h-screen pt-[20%] md:py-[100px] relative mb-[44px] md:mb-0 "
       id="projects"
     >
       <motion.div

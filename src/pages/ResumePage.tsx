@@ -7,7 +7,7 @@ const ResumePage: React.FunctionComponent<
 > = () => {
   return (
     <section
-      className="h-[50vh] md:h-screen pt-[20%] md:py-[10%] relative mb-[44px] md:mb-0 "
+      className="h-[50vh] md:h-screen pt-[20%] md:py-[100px] relative mb-[44px] md:mb-0 "
       id="resume"
     >
       <motion.div
