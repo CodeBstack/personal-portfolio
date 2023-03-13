@@ -22,7 +22,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%] md:pt-0 md:px-[10%]">
+      <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%]  md:pt-0 md:px-[10%]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')
@@ -106,7 +106,7 @@ function App() {
         <div className="h-px w-24 mt-16 rotate-90 bg-[#a8b2d1]"></div>
       </div>
 
-      <div className="block md:hidden footer_socials ">
+      <div className="flex md:hidden footer_socials ">
         <a
           href="#"
           target="_blank"

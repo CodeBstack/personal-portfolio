@@ -130,7 +130,7 @@ code {
 }
 
 .footer_socials {
-    position: fixed;
+    position: sticky;
     backdrop-filter: blur(6px) saturate(2.5);
     display: flex;
     right: 0px;
