@@ -136,7 +136,7 @@ const NavBar: React.FunctionComponent<
       {/* MOBILE NAV SIDEBAR */}
       {isNavOpened && (
         <div
-          className={`flex md:hidden oerflow-y-auto transition-all duration-500 ease-in-out flex-col items-center justify-enter z-[999] w-[60%] fixed top-0 right-0 h-screen bg-[#112240]`}
+          className={`flex md:hidden px-[7%] oerflow-y-auto transition-all duration-500 ease-in-out flex-col items-center justify-enter z-[999] w-[60%] fixed top-0 right-0 h-screen bg-[#112240]`}
         >
           <IconButton
             sx={{
@@ -149,10 +149,11 @@ const NavBar: React.FunctionComponent<
             <CloseIcon />
           </IconButton>
 
-          <div className="w-full flex mt-[124px] mb-16 gap-10 flex-col text-center">
+          <div className="w-full flex mt-[124px] mb-16 gap-8 flex-col text-center">
             {NavLinks.map((navlink, i) => (
               <AnchorLink
                 key={i}
+                className='hover:bg-primary py-2 rounded-[8px]'
                 href={`#${navlink.text.toLocaleLowerCase()}`}
                 onClick={() => {
                   setSelectedPage(
