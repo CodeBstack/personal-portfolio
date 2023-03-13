@@ -68,13 +68,7 @@ function App() {
         >
           <ContactPage />
         </motion.div>
-        {/* <HomePage />
-        <AboutPage />
-        <ProjectsPage />
-        <ResumePage />
-        <ContactPage /> */}
-        {/* <Footer /> */}
-      </div>
+             </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a href="mailto: ssamuelolumide@gmail.com">
           ssamuelolumide@gmail.com
@@ -84,7 +78,7 @@ function App() {
 
       <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
         <a
-          href="#"
+          href="https://github.com/CodeBstack"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -98,14 +92,14 @@ function App() {
           <InstagramIcon />
         </a>
         <a
-          href="#"
+          href="https://twitter.com/SunmonuSam"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TwitterIcon />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/samuel-sunmonu/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -117,7 +111,7 @@ function App() {
 
       <div className="flex md:hidden footer_socials ">
         <a
-          href="#"
+          href="https://github.com/CodeBstack"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -131,14 +125,14 @@ function App() {
           <InstagramIcon />
         </a>
         <a
-          href="#"
+          href="https://twitter.com/SunmonuSam"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TwitterIcon />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/samuel-sunmonu/"
           target="_blank"
           rel="noopener noreferrer"
         >
