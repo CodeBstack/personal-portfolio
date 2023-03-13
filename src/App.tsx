@@ -31,7 +31,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mx-auto  max-w-[1440px] px-4 y-[10%]  md:pb-[5%] md:pt-0 md:px-[10%]">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:pb-[5%] md:px-[10%]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')
