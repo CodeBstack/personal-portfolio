@@ -24,7 +24,7 @@ const ContactPage = () => {
 
 
     return (
-        <section id="contact" className="contact pt-[10%]">
+        <section id="contact" className="contact pt-[20%] md:pt-[10%]">
             {/* HEADINGS */}
             <motion.div
                 initial="hidden"

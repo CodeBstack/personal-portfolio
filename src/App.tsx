@@ -9,20 +9,29 @@ import ProjectsPage from './pages/Projects';
 import ResumePage from './pages/ResumePage';
 import GithubIcon from './components/Vectors/GithubIcon';
 import ContactPage from './pages/ContactPage';
-import Footer from './pages/Footer';
 import { motion } from 'framer-motion';
 
 function App() {
   const [selectedPage, setSelectedPage] =
     useState<string>('home');
+  const [isNavOpened, setIsNavOpened] =
+    useState<boolean>(false);
 
   return (
-    <div className="relative text-text-primary ">
+    <div className=" relative text-text-primary ">
+      <div
+        className={`overlay mobile_nav_backdrop z-[99] fixed top-0 left-0 h-screen w-full ${
+          isNavOpened ? 'block ' : 'hidden'
+        }`}
+      ></div>
+
       <NavBar
+        isNavOpened={isNavOpened}
+        setIsNavOpened={setIsNavOpened}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mx-auto w[95%] max-w-[1440px] px-4 py-[10%]  md:pt-0 md:px-[10%]">
+      <div className="mx-auto  max-w-[1440px] px-4 y-[10%]  md:pb-[5%] md:pt-0 md:px-[10%]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')

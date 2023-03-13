@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+
 interface ResumePageProps {}
 
 const ResumePage: React.FunctionComponent<
@@ -6,7 +7,7 @@ const ResumePage: React.FunctionComponent<
 > = () => {
   return (
     <section
-      className="h-[50vh] md:h-screen md:py-[10%] relative mb-[44px] md:mb-0 "
+      className="h-[50vh] md:h-screen pt-[20%] md:py-[10%] relative mb-[44px] md:mb-0 "
       id="resume"
     >
       <motion.div
@@ -43,45 +44,32 @@ const ResumePage: React.FunctionComponent<
       >
         Reach out to me via my{' '}
         <a
+          rel="noopener noreferrer"
           href="#contact"
           className="text-secondary"
         >
           contact page
         </a>
-        . <br />{' '}
+        .{' '}
         <a
+          rel="noopener noreferrer"
+          target="_blank"
           href="../assets/Sunmonu_resume.pdf"
           className="text-secondary"
         >
           View
         </a>{' '}
         or{' '}
-        <a href="#" className="text-secondary" download>
+        <a
+          rel="noopener noreferrer"
+          href="#"
+          className="text-secondary"
+          download
+        >
           download
         </a>{' '}
-        the resume
+        the resume.
       </motion.p>
-      {/* <p className="text-center md:text-left font-SF2 text-2xl md:text-[32px] text max-w-[818px]">
-        Reach out to me via my{' '}
-        <a
-          href="#contact"
-          className="text-secondary"
-        >
-          contact page
-        </a>
-        . <br />{' '}
-        <a
-          href="../assets/Sunmonu_resume.pdf"
-          className="text-secondary"
-        >
-          view
-        </a>{' '}
-        or{' '}
-        <a href="#" className="text-secondary">
-          download
-        </a>{' '}
-        the resume
-      </p> */}
     </section>
   );
 };

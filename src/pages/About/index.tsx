@@ -32,7 +32,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="min-h-screen md:py-[10%] relative mb-[44px] md:mb-0 "
+      className="min-h-screen pt-[20%] md:py-[10%] relative mb-[44px] md:mb-0 "
       id="about"
     >
       {/* <motion.div className="flex gap-4 items-center  mb-12 flex-wrap"> */}

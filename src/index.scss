@@ -97,8 +97,13 @@ code {
     }
 }
 
-.backDrop {
+.desktop_nav_backdrop {
     backdrop-filter: blur(6px) saturate(2.5);
+}
+
+.mobile_nav_backdrop {
+    background: rgba(10, 25, 47, 0.7);
+    backdrop-filter: blur(4px);
 }
 
 .css-ja5taz-MuiTooltip-tooltip {
@@ -146,7 +151,7 @@ code {
     bottom: 0px !important;
 }
 
-.footer_socials  svg {
+.footer_socials svg {
     width: 20px !important;
     height: 20px !important;
 }

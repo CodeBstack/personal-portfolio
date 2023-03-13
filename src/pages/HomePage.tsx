@@ -36,7 +36,7 @@ const HomePage: React.FunctionComponent<
 
   return (
     <section
-      className="relative text-text-primary flex justify-centr items-center mb-[44px] md:mb-0 md:h-screen"
+      className="relative pt-[30%] md:pt-0 text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
       id="home"
     >
       <div>
