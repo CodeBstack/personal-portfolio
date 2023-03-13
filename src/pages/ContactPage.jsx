@@ -1,21 +1,27 @@
 import StarIcon from '@mui/icons-material/Star';
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
     const {
         register,
         trigger,
+        handleSubmit,
         formState: { errors },
     } = useForm();
 
     const onSubmit = async (e) => {
-        console.log("~ e", e);
-        // const isValid = await trigger();
-        // if (!isValid) {
-        e.preventDefault();
-        // }
+        // e.preventDefault();
+        console.log(e);
+        emailjs.sendForm('service_lveo1m8', 'template_qcz012d', '#form', 'c0ngDyg0sYLt5OQYc')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
+
 
     return (
         <section id="contact" className="contact pt-[10%]">
@@ -59,9 +65,10 @@ const ContactPage = () => {
             >
                 <form
                     target="_blank"
-                    onSubmit={onSubmit}
-                    action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
-                    method="POST"
+                    onSubmit={handleSubmit(onSubmit)}
+                    id='form'
+                    // action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+                    // method="POST"
                     className="flex flex-col"
                 >
                     <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb-3">
