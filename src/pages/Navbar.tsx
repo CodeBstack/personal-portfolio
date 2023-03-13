@@ -171,7 +171,7 @@ const NavBar: React.FunctionComponent<
           <a
             target="_blank"
             rel="noreferrer"
-            href={'../assets/sunmonu_resume.pdf'}
+            href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
             className="w-full max-w-[152px] py-[18px] text-center border-2 border-secondary bg-transparent font-SF2 text-secondary rounded-[5px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
           >
             Resume

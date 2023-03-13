@@ -54,15 +54,16 @@ const ResumePage: React.FunctionComponent<
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="../assets/Sunmonu_resume.pdf"
+          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
           className="text-secondary"
         >
           View
         </a>{' '}
         or{' '}
         <a
+          target="_blank"
           rel="noopener noreferrer"
-          href="#"
+          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
           className="text-secondary"
           download
         >
