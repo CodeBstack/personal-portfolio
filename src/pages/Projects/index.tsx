@@ -138,13 +138,15 @@ const ProjectsPage: React.FunctionComponent<
         ))}
       </motion.div>
 
-      <div className="mt-60 text-center">
+      <div className="mt-28 md:mt-60 text-center">
         <h2 className="font-Calibre2 text-text-200 text-2xl text-[32px]">
           Other Projects Worth Noting
         </h2>
 
         <a
-          href="#"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/CodeBstack?tab=repositories"
           className="font-SF1 text-secondary mt-2"
         >
           View my archive

@@ -15,11 +15,15 @@ const ContactPage = () => {
         // e.preventDefault();
         console.log(e);
         emailjs.sendForm('service_lveo1m8', 'template_qcz012d', '#form', 'c0ngDyg0sYLt5OQYc')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+            .then(
+                () => {
+                    alert('Message successfully sent!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Failed to send the message, please try again')
+                }
+            )
     };
 
 
