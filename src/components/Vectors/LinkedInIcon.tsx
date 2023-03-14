@@ -1,4 +1,4 @@
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 import React from 'react';
 import { useState } from 'react';
 
@@ -11,10 +11,10 @@ const LinkedInIcon = ({ color }: Props) => {
 
   return (
     <>
-      <Tooltip
+      {/* <Tooltip
         title="LinkedIn"
         placement="right-start"
-      >
+      > */}
         <svg
           width="26"
           height="26"
@@ -29,7 +29,7 @@ const LinkedInIcon = ({ color }: Props) => {
             fill={color || color1}
           />
         </svg>
-      </Tooltip>
+      {/* </Tooltip> */}
     </>
   );
 };

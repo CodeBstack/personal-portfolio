@@ -65,10 +65,22 @@ const EachProject: React.FunctionComponent<
           <div
             className={`flex gap-8 w-full items-center`}
           >
-            <a href={data.projectRepoLink}>
+            <a
+              aria-label="Go to the project github repo"
+              title="Github repo"
+              target="_blank"
+              rel="noreferrer"
+              href={data.projectRepoLink}
+            >
               <GithubIcon />
             </a>{' '}
-            <a href={data.projectDemoLink}>
+            <a
+              aria-label="Go to the project demo"
+              title="Project Demo"
+              target="_blank"
+              rel="noreferrer"
+              href={data.projectDemoLink}
+            >
               <LinkOutIcon />
             </a>
           </div>
@@ -146,10 +158,22 @@ const EachProject: React.FunctionComponent<
                 : 'justify-start'
             } mt-12 items-center`}
           >
-            <a href={data.projectRepoLink}>
+            <a
+              aria-label="Go to the project github repo"
+              title="Github repo"
+              target="_blank"
+              rel="noreferrer"
+              href={data.projectRepoLink}
+            >
               <GithubIcon />
             </a>{' '}
-            <a href={data.projectDemoLink}>
+            <a
+              aria-label="Go to the project demo"
+              title="Project Demo"
+              target="_blank"
+              rel="noreferrer"
+              href={data.projectDemoLink}
+            >
               <LinkOutIcon />
             </a>
           </div>

@@ -1,4 +1,4 @@
-import { Tooltip } from '@mui/material';
+// import { Tooltip } from '@mui/material';
 import React from 'react';
 import { useState } from 'react';
 
@@ -11,10 +11,10 @@ const InstagramIcon = ({ color }: Props) => {
 
   return (
     <>
-      <Tooltip
+      {/* <Tooltip
         title="Instagram"
         placement="right-start"
-      >
+      > */}
         <svg
           width="30"
           height="30"
@@ -41,7 +41,7 @@ const InstagramIcon = ({ color }: Props) => {
             fill={color || color1}
           />
         </svg>
-      </Tooltip>
+      {/* </Tooltip> */}
     </>
   );
 };

@@ -68,9 +68,13 @@ function App() {
         >
           <ContactPage />
         </motion.div>
-             </div>
+      </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
-        <a href="mailto: ssamuelolumide@gmail.com">
+        <a
+          aria-label="Email Me"
+          title="Email Me"
+          href="mailto: ssamuelolumide@gmail.com"
+        >
           ssamuelolumide@gmail.com
         </a>
         <div className="h-px w-24 ml-10 bg-[#a8b2d1]"></div>
@@ -78,6 +82,8 @@ function App() {
 
       <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
         <a
+          aria-label="Go to Samuel Olumide Github page"
+          title="Github page"
           href="https://github.com/CodeBstack"
           target="_blank"
           rel="noopener noreferrer"
@@ -85,6 +91,8 @@ function App() {
           <GithubIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide Instagram page"
+          title="Instagram page"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
@@ -92,6 +100,8 @@ function App() {
           <InstagramIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide Twitter page"
+          title="Twitter page"
           href="https://twitter.com/SunmonuSam"
           target="_blank"
           rel="noopener noreferrer"
@@ -99,6 +109,8 @@ function App() {
           <TwitterIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide LinkedIn page"
+          title="LinkedIn page"
           href="https://www.linkedin.com/in/samuel-sunmonu/"
           target="_blank"
           rel="noopener noreferrer"
@@ -111,6 +123,8 @@ function App() {
 
       <div className="flex md:hidden footer_socials ">
         <a
+          aria-label="Go to Samuel Olumide Github page"
+          title="Github page"
           href="https://github.com/CodeBstack"
           target="_blank"
           rel="noopener noreferrer"
@@ -118,6 +132,8 @@ function App() {
           <GithubIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide Instagram page"
+          title="Instagram page"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
@@ -125,6 +141,8 @@ function App() {
           <InstagramIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide Twitter page"
+          title="Twitter page"
           href="https://twitter.com/SunmonuSam"
           target="_blank"
           rel="noopener noreferrer"
@@ -132,6 +150,8 @@ function App() {
           <TwitterIcon />
         </a>
         <a
+          aria-label="Go to Samuel Olumide LinkedIn page"
+          title="LinkedIn page"
           href="https://www.linkedin.com/in/samuel-sunmonu/"
           target="_blank"
           rel="noopener noreferrer"

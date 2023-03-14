@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Tooltip } from '@mui/material';
+// import { Tooltip } from '@mui/material';
 interface Props {
   color?: string;
 }
@@ -9,10 +9,10 @@ const GithubIcon = ({ color }: Props) => {
   const [color1, setColor] = useState('#A8B2D1');
   return (
     <>
-      <Tooltip
+      {/* <Tooltip
         title="GitHub"
         placement="right-start"
-      >
+      > */}
         <svg
           width="24"
           height="24"
@@ -30,7 +30,7 @@ const GithubIcon = ({ color }: Props) => {
             stroke-linejoin="round"
           />
         </svg>
-      </Tooltip>
+      {/* </Tooltip> */}
     </>
   );
 };
