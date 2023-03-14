@@ -93,7 +93,7 @@ function App() {
         <a
           aria-label="Go to Samuel Olumide Instagram page"
           title="Instagram page"
-          href="#"
+          href="https://www.instagram.com/samuel__olumide/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -134,7 +134,7 @@ function App() {
         <a
           aria-label="Go to Samuel Olumide Instagram page"
           title="Instagram page"
-          href="#"
+          href="https://www.instagram.com/samuel__olumide/"
           target="_blank"
           rel="noopener noreferrer"
         >
