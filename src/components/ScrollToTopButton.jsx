@@ -28,16 +28,16 @@ function ScrollToTopButton() {
     return (
         <>
             {showButton && (
-                <Tooltip title="Scroll to Top" placement="left">
-                    <div className="fixed bottom-5 right-5 z-50 flex h-[60px] w-[60px] items-center justify-center rounded-16 bg-grey_60 md:right-7">
-                        <IconButton
-                            onClick={handleScrollToTop}
-                            sx={{ width: "100%", height: "100%", borderRadius: "16px" }}
-                        >
-                            <ArrowUpwardOutlined fontSize="medium" color="primary" />
-                        </IconButton>
-                    </div>
-                </Tooltip>
+                // <Tooltip title="Scroll to Top" placement="left">
+                <div className="hidden fixed bottom-5 right-5 z-[999] md:flex h-[50px] w-[50px] items-center justify-center rounded-[10px] bg-text-200 md:right-7" title='Scroll Button'>
+                    <IconButton
+                        onClick={handleScrollToTop}
+                        sx={{ width: "100%", height: "100%", borderRadius: "16px" }}
+                    >
+                        <ArrowUpwardOutlined fontSize="medium" sx={{ color: "#0A192F" }} />
+                    </IconButton>
+                </div>
+                // </Tooltip>
             )}
         </>
     );

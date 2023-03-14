@@ -1,5 +1,6 @@
 interface Projects {
   id?: number;
+  imgUrl?: string;
   skills?: string[];
   layout?: string;
   projectTitle?: string;
@@ -22,6 +23,7 @@ export const truncateString = (
 export const projects: Projects[] = [
   {
     id: 1,
+    imgUrl: '',
     skills: [
       'HTML',
       'CSS',
@@ -37,6 +39,7 @@ export const projects: Projects[] = [
   },
   {
     id: 2,
+    imgUrl: '',
     skills: [
       'HTML',
       'CSS',
@@ -52,18 +55,17 @@ export const projects: Projects[] = [
   },
   {
     id: 3,
-    skills: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'TypeScript',
-    ],
+    imgUrl: '',
+    // '/images/Manage-landing-page.png',
+    skills: ['HTML', 'CSS', 'TailwindCss'],
     layout: 'normal',
     projectDesc:
-      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
-    projectTitle: 'Project Dashboard',
-    projectRepoLink: '#',
-    projectDemoLink: '#',
+      'A single page website built with TailwindCss which is mobile first responsive.',
+    projectTitle: 'Manage Landing Page',
+    projectRepoLink:
+      'https://github.com/CodeBstack/LandingPage-tailwind',
+    projectDemoLink:
+      'https://codebstack.github.io/LandingPage-tailwind/',
   },
 ];
 

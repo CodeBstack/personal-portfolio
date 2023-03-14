@@ -69,7 +69,7 @@ function App() {
           <ContactPage />
         </motion.div>
       </div>
-      <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-20  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
+      <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
         <a
           aria-label="Email Me"
           title="Email Me"
