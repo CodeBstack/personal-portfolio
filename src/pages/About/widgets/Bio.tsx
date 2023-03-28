@@ -24,28 +24,6 @@ const Bio: React.FunctionComponent<
           className=" self-centr mx-auto md:mx-0 relative min-h-[269px] min-w-[292px] rounded-[8px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[8px] before:-right-[8px] before:rounded-[8px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
         ></div>
-
-        <div className="cubespinner hidden">
-          <div className="face1">
-            <CloseIcon />
-            {/* <FontAwesomeIcon icon={faSass} color="#DD0031" /> */}
-          </div>
-          <div className="face2">
-            {/* <FontAwesomeIcon icon={faHtml5} color="#F06529" /> */}
-          </div>
-          <div className="face3">
-            {/* <FontAwesomeIcon icon={faCss3} color="#28A4D9" /> */}
-          </div>
-          <div className="face4">
-            {/* <FontAwesomeIcon icon={faReact} color="#5ED4F4" /> */}
-          </div>
-          <div className="face5">
-            {/* <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" /> */}
-          </div>
-          <div className="face6">
-            {/* <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" /> */}
-          </div>
-        </div>
       </div>
     </div>
   );
