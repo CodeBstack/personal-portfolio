@@ -12,7 +12,7 @@ const CloseIcon = () => {
       >
         <path
           d="M1.44751 14.5538L8.00126 8.00004L14.555 14.5538M14.555 1.44629L8.00001 8.00004L1.44751 1.44629"
-          stroke="#64FFDA"
+          stroke="#ABD1B2"
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"

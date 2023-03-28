@@ -15,21 +15,21 @@ const MenuIcon = () => {
           y="16.004"
           width="20"
           height="2"
-          fill="#64FFDA"
+          fill="#ABD1B2"
         />
         <rect
           x="5.66064"
           y="8.00403"
           width="25"
           height="2"
-          fill="#64FFDA"
+          fill="#ABD1B2"
         />
         <rect
           x="0.660767"
           y="0.00402832"
           width="30"
           height="2"
-          fill="#64FFDA"
+          fill="#ABD1B2"
         />
       </svg>
     </>

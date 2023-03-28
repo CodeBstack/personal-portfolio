@@ -76,30 +76,12 @@ const AboutPage: React.FunctionComponent<
                 title={value.title}
                 placement="top"
               >
-                {/* <button
-                  onClick={() =>
-                    setPresentStep(value.id)
-                  }
-                  // disabled={presentStep < value.id}
-                  key={value.id}
-                  className={`flex h-[30px] w-[30px] items-center justify-center
-                text-[18px] text-text-primary font-SF2 transition-all duration-150 ease-in-out
-                 ${
-                   presentStep === value.id &&
-                   '!bg-secondary text-text-primary '
-                 } 
-                 
-                rounded-[8px] `}
-                >
-                  {value.id}
-                </button> */}
                 <button
                   key={value.id}
                   type="button"
                   onClick={() =>
                     setPresentStep(value.id)
                   }
-                  // disabled={presentStep < value.id}
                   className="flex"
                 >
                   <span
@@ -128,7 +110,6 @@ const AboutPage: React.FunctionComponent<
                 onClick={() =>
                   setPresentStep(value.id)
                 }
-                // disabled={presentStep < value.id}
                 className="flex items-center gap-4"
               >
                 <span
@@ -145,7 +126,6 @@ const AboutPage: React.FunctionComponent<
           </div>
         </div>
         <div className="w-full">
-          {/* Displays the component that corresponds with the presentStep */}
           {
             stepComponents[
               presentStep as keyof StepComponents

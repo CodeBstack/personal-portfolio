@@ -136,7 +136,11 @@ const NavBar: React.FunctionComponent<
       {/* MOBILE NAV SIDEBAR */}
       {isNavOpened && (
         <div
-          className={`flex md:hidden px-[7%] oerflow-y-auto transition-all duration-500 ease-in-out flex-col items-center justify-enter z-[999] w-[60%] fixed top-0 right-0 h-screen bg-[#112240]`}
+          className={`flex md:hidden px-[7%] oerflow-y-auto transition-all duration-500 flex-col items-center z-[999] w-[70%] fixed top-0 h-screen bg-[#020A13] ${
+            isNavOpened
+              ? 'right-0 w-[70%] lg:min-w-[270px]'
+              : '-right-[100vw] lg:right-0 lg:w-[100px] '
+          } `}
         >
           <IconButton
             sx={{
@@ -150,10 +154,24 @@ const NavBar: React.FunctionComponent<
           </IconButton>
 
           <div className="w-full flex mt-[124px] mb-16 gap-8 flex-col text-center">
+            <IconButton
+              onClick={() =>
+                setIsDarkMode(!isDarkMode)
+              }
+            >
+              {isDarkMode ? (
+                <LightModeOutlinedIcon
+                  sx={{ color: '#CCD6F6' }}
+                />
+              ) : (
+                <DarkModeIcon />
+              )}
+            </IconButton>
+            
             {NavLinks.map((navlink, i) => (
               <AnchorLink
                 key={i}
-                className='hover:bg-primary py-2 rounded-[8px]'
+                className="hover:bg-primary py-2 rounded-[8px]"
                 href={`#${navlink.text.toLocaleLowerCase()}`}
                 onClick={() => {
                   setSelectedPage(

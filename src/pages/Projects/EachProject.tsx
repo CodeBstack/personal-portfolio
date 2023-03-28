@@ -91,7 +91,7 @@ const EachProject: React.FunctionComponent<
         alt={projectTitle}
       /> */}
         <div
-          className={` bg-[#233554] h-full max-wpx]`}
+          className={` bg-[#091521] h-full max-wpx]`}
         ></div>
       </motion.div>
 
@@ -109,7 +109,7 @@ const EachProject: React.FunctionComponent<
         <div
           className={`${
             data.layout === 'reverse' && '-ml-10'
-          } bg-[#233554] min-h-[360px] z-[-1] relative  w-1/2 max-w-[580px] object-cover`}
+          } bg-[#091521] min-h-[360px] z-[-1] relative  w-1/2 max-w-[580px] object-cover`}
         >
           <img
             className="!h-full !w-full absolute top-0 right-0 object-ver"

@@ -97,7 +97,7 @@ const Project = ({ data }: ProjectProps) => {
         alt={projectTitle}
       /> */}
       <div
-        className={` bg-[#233554] h-[471px] max-wpx]`}
+        className={` bg-[#091521] h-[471px] max-wpx]`}
       ></div>
     </motion.div>
   );
