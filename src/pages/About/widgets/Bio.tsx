@@ -21,9 +21,15 @@ const Bio: React.FunctionComponent<
       </p>
       <div className="flex-1  max-w-[450px] lg:mt12 ">
         <div
-          className=" self-centr mx-auto md:mx-0 relative min-h-[269px] min-w-[292px] rounded-[8px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[8px] before:-right-[8px] before:rounded-[8px]
+          className=" self-centr mx-auto md:mx-0 relative min-h-[269px] max-h-[269px] min-w-[292px] rounded-[10px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[10px] before:-right-[10px] before:rounded-[10px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-        ></div>
+        >
+          <img
+            src="/images/my-picture.jpg"
+            alt="my jpeg"
+            className="rounded-[8px] max-h-full w-full"
+          />
+        </div>
       </div>
     </div>
   );
