@@ -32,7 +32,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="overflow-x-hidden min-h-screen pt-[25%] md:pt-[100px] relative mb-[px] md:mb-0 "
+      className="md:min-h-screen pt-[25%] md:pt-[100px] relative md:mb-0 "
       id="about"
     >
       <motion.div

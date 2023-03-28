@@ -18,7 +18,7 @@ function App() {
     useState<boolean>(false);
 
   return (
-    <div className=" relative text-text-primary ">
+    <div className="relative text-text-primary ">
       <div
         className={`overlay mobile_nav_backdrop z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'

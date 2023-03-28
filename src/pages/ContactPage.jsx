@@ -28,7 +28,7 @@ const ContactPage = () => {
 
 
     return (
-        <section id="contact" className="contact pt-[25%] md:pt-[100px]">
+        <section id="contact" className="overflow-x-hidden contact pt-[25%] md:pt-[100px]">
             {/* HEADINGS */}
             <motion.div
                 initial="hidden"
