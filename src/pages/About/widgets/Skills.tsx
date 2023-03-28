@@ -14,7 +14,7 @@ const Skills: React.FunctionComponent<
 > = () => {
   return (
     <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
-      <ul className="flex-1 font-SF2 md:mt-10 text-text-200 text-base grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-6">
+      <ul className="flex-1 font-SF2 md:mt-10 text-text-200 text-base grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
           HTML
