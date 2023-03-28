@@ -94,11 +94,10 @@ const HomePage: React.FunctionComponent<
         <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-text-primary md:text-xl mt-5">
           I'm a{' '}
           <span className="text-secondary">
-            Software Engineer
+            Frontend Developer
           </span>{' '}
           who specializes in creating exceptional
-          digital experiences. At Native Brand,
-          I'm currently focused on creating
+          digital experiences on the web. I focus on creating
           accessible, human-centered products.
         </p>
 

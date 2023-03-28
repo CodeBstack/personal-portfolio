@@ -24,7 +24,7 @@ module.exports = {
       },
       colors: {
         primary: "#0A192F",
-        secondary: "#ABD1B2",
+        secondary: "#64FFDA",
         error: "#B42318",
         "nav-text": "#CCD6F6",
         "text-200": "#CCD6F6",

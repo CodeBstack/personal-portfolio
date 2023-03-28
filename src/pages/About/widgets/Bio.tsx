@@ -19,14 +19,13 @@ const Bio: React.FunctionComponent<
         challenge at a time.
         <br />
       </p>
-      <div className="flex-1  max-w-[450px] lg:mt-12 ">
-        {/* <div
+      <div className="flex-1  max-w-[450px] lg:mt12 ">
+        <div
           className=" self-centr mx-auto md:mx-0 relative min-h-[269px] min-w-[292px] rounded-[8px] bg-secondary max-w-[292px] before:bg-[#D9D9D9] before:absolute before:-top-[8px] before:-right-[8px] before:rounded-[8px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-        ></div> */}
+        ></div>
 
-        {/* <div className="stage-cube-cont"> */}
-        <div className="cubespinner">
+        <div className="cubespinner hidden">
           <div className="face1">
             <CloseIcon />
             {/* <FontAwesomeIcon icon={faSass} color="#DD0031" /> */}
@@ -47,7 +46,6 @@ const Bio: React.FunctionComponent<
             {/* <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" /> */}
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

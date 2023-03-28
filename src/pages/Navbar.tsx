@@ -1,7 +1,6 @@
 import { ReactComponent as Logo } from '../assets/logo.svg';
-// import myPdf from '../assets/sunmonu_resume.pdf';
-import DarkModeIcon from '../components/Vectors/DarkModeIcon';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import NightsStayOutlinedIcon from '@mui/icons-material/NightsStayOutlined';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
 import MenuIcon from '../components/Vectors/MenuIcon';
 import { IconButton } from '@mui/material';
 import { useState, useEffect } from 'react';
@@ -116,11 +115,15 @@ const NavBar: React.FunctionComponent<
           }
         >
           {isDarkMode ? (
-            <LightModeOutlinedIcon
+            <NightsStayIcon
+              fontSize="medium"
               sx={{ color: '#CCD6F6' }}
             />
           ) : (
-            <DarkModeIcon />
+            <NightsStayOutlinedIcon
+              fontSize="medium"
+              sx={{ color: '#CCD6F6' }}
+            />
           )}
         </IconButton>
       </div>
@@ -160,14 +163,18 @@ const NavBar: React.FunctionComponent<
               }
             >
               {isDarkMode ? (
-                <LightModeOutlinedIcon
+                <NightsStayIcon
+                  fontSize="medium"
                   sx={{ color: '#CCD6F6' }}
                 />
               ) : (
-                <DarkModeIcon />
+                <NightsStayOutlinedIcon
+                  fontSize="medium"
+                  sx={{ color: '#CCD6F6' }}
+                />
               )}
             </IconButton>
-            
+
             {NavLinks.map((navlink, i) => (
               <AnchorLink
                 key={i}

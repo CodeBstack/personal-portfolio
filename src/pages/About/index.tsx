@@ -24,15 +24,15 @@ const AboutPage: React.FunctionComponent<
 
   let stepComponents: StepComponents = {
     1: <Bio />,
-    2: <Education />,
-    3: <Passion />,
-    4: <Experience />,
-    5: <Skills />,
+    2: <Skills />,
+    3: <Education />,
+    4: <Passion />,
+    5: <Experience />,
   };
 
   return (
     <section
-      className="min-h-screen pt-[25%] md:pt-[100px] relative mb-[px] md:mb-0 "
+      className="min-h-screen py-[25%] md:pt-[100px] relative mb-[px] md:mb-0 "
       id="about"
     >
       <motion.div
@@ -144,20 +144,20 @@ const steps = [
     id: 1,
   },
   {
-    title: 'Education',
+    title: 'Skills',
     id: 2,
+  },
+  {
+    title: 'Education',
+    id: 3,
   },
 
   {
     title: 'Passion',
-    id: 3,
-  },
-  {
-    title: 'Experience',
     id: 4,
   },
   {
-    title: 'Skills',
+    title: 'Experience',
     id: 5,
   },
 ];
