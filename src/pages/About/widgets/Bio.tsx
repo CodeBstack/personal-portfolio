@@ -21,7 +21,7 @@ const Bio: React.FunctionComponent<
       </p>
       <div className="flex-1  max-w-[450px] lg:mt12 ">
         <div
-          className=" self-centr mx-auto md:mx-0 relative min-h-[269px] max-h-[269px] min-w-[292px] rounded-[10px] bg-secondary max-w-[292px] before:bg-secondary before:absolute before:-top-[10px] before:-right-[10px] before:rounded-[10px]
+          className=" self-centr mx-auto md:mx-0 relative min-h-[269px] max-h-[269px] min-w-[292px] rounded-[10px] bg-secondary max-w-[292px] before:bg-secondary before:absolute before:-top-[10px] before:-right-[10px] before:rounded-[7px]
             before:w-full before:max-w-[292px] before:h-full before:border-2 before:border-blue before:z-[-1]"
         >
           <img
