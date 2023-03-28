@@ -78,7 +78,7 @@ const ContactPage = () => {
                     <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb-3">
                         <div className="w-full flex-1">
                             <input
-                                className="w-full bg-[#233554] font-SF1 placeholder-text-200 p-4"
+                                className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
                                 type="text"
                                 placeholder="Name"
                                 {...register("name", {
@@ -96,7 +96,7 @@ const ContactPage = () => {
 
                         <div className="w-full flex-1">
                             <input
-                                className="w-full bg-[#233554] font-SF1 placeholder-text-200 p-4"
+                                className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
                                 type="text"
                                 placeholder="Email"
                                 {...register("email", {
@@ -114,7 +114,7 @@ const ContactPage = () => {
                     </div>
 
                     <input
-                        className="w-full bg-[#233554] font-SF1 placeholder-text-200 p-4"
+                        className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
                         type="text"
                         placeholder="Subject"
                         {...register("subject", {
@@ -130,7 +130,7 @@ const ContactPage = () => {
                     )}
 
                     <textarea
-                        className="w-full mt-3 bg-[#233554] font-SF1 placeholder-text-200 p-4"
+                        className="w-full mt-3 bg-[#112240] font-SF1 placeholder-text-200 p-4"
                         name="message"
                         placeholder="Message"
                         rows="6"
