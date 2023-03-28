@@ -70,7 +70,7 @@ const CustomCursor = () => {
     followMouse();
   }, []);
   return (
-    <div className={`hidden md:block cursor-wrapper h-0 ${type}`}>
+    <div className={`hidden lg:block cursor-wrapper h-0 ${type}`}>
       <div className="main-cursor " ref={mainCursor}>
         <div className="main-cursor-background"></div>
         {/* <CursorIcon/> */}

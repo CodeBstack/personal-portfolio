@@ -139,7 +139,7 @@ const NavBar: React.FunctionComponent<
       {/* MOBILE NAV SIDEBAR */}
       {isNavOpened && (
         <div
-          className={`flex md:hidden px-[7%] oerflow-y-auto transition-all duration-500 flex-col items-center z-[999] w-[70%] fixed top-0 h-screen bg-[#020A13] ${
+          className={`flex md:hidden px-[7%] overflow-y-auto transition-all duration-500 flex-col items-center z-[999] w-[70%] fixed top-0 h-screen bg-[#020A13] ${
             isNavOpened
               ? 'right-0 w-[70%] lg:min-w-[270px]'
               : '-right-[100vw] lg:right-0 lg:w-[100px] '
@@ -156,7 +156,7 @@ const NavBar: React.FunctionComponent<
             <CloseIcon />
           </IconButton>
 
-          <div className="w-full flex mt-[124px] mb-16 gap-8 flex-col text-center">
+          <div className="w-full flex mt-[104px] mb-12 gap-6 flex-col text-center">
             <IconButton
               onClick={() =>
                 setIsDarkMode(!isDarkMode)
@@ -187,7 +187,7 @@ const NavBar: React.FunctionComponent<
                   setIsNavOpened(false);
                 }}
               >
-                <p className="text-secondary mb-[5px]">
+                <p className="text-secondary mb-[4px]">
                   {navlink.pos}
                 </p>
                 <p>{navlink.text}</p>

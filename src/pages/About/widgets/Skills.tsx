@@ -64,15 +64,15 @@ const Skills: React.FunctionComponent<
           GRAPHQL
         </li>
       </ul>
-      <div className="flex-1  max-w-[450px]  lg:mt-12 ">
+      <div className="flex-1  max-w-[450px] mb-40 md:mb-48 lg:mb-0 lg:mt-12 ">
         <div className="cubespinner">
-          <div className="face2">
+          <div className="face1">
             <FaHtml5 color="#F06529" />
           </div>
-          <div className="face3">
+          <div className="face2">
             <FaCss3 color="#28A4D9" />
           </div>
-          <div className="face1">
+          <div className="face3">
             <FaSass color="#DD0031" />
           </div>
           <div className="face4">
