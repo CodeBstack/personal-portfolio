@@ -12,7 +12,7 @@ const Bio: React.FunctionComponent<
         I'm an extremely ambitious Front-end
         developer looking for a position in a
         reputable IT firm where I can use the
-        newest technology on difficult and varied
+        newest technology on difficult and various
         projects. <br /> I'm naturally interested,
         self-assured, and constantly looking for
         ways to sharpen my skills one design

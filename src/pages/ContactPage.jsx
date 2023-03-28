@@ -42,7 +42,7 @@ const ContactPage = () => {
                 className="text-center items-center flex gap-4 md:gap-6 flex-col mb-[40px]"
             >
                 <div className="text-center items-center flex gap-4 md:gap-6 flex-col">
-                    <p className="font-SF2 text-secondary text-base md:text-xl">
+                    <p className="font-SF2 text-secondary text-base md:mt-4 md:text-xl">
                         <span className="mr-6">04.</span> What's
                         Next?
                     </p>
