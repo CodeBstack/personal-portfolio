@@ -14,7 +14,7 @@ const Skills: React.FunctionComponent<
 > = () => {
   return (
     <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
-      <ul className="flex-1 font-SF2 md:mt-10 text-text-200 text-base grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
+      <ul className="flex-1 font-SF2 md:mt10 text-text-200 text-base grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
           HTML
@@ -64,7 +64,7 @@ const Skills: React.FunctionComponent<
           GRAPHQL
         </li>
       </ul>
-      <div className="flex-1  max-w-[450px] mb-40 md:mb-48 lg:mb-0 lg:mt-12 ">
+      <div className="flex-1  max-w-[450px] mb-40 md:mb-48 lg:mb-0 lg:mt-0 ">
         <div className="cubespinner">
           <div className="face1">
             <FaHtml5 color="#F06529" />

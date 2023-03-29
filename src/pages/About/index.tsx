@@ -32,7 +32,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="md:min-hscreen pt-[25%] md:pt-[100px] relative md:mb-0 "
+      className="md:min-hscreen lg:mb-20 sticky top-0 left-0 pt-[25%] md:pt-[100px] relatve md:mb-0 "
       id="about"
     >
       <motion.div
@@ -66,11 +66,11 @@ const AboutPage: React.FunctionComponent<
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0 },
         }}
-        className="mt-0 flex w-full flex-col md:flex-row md:justify-start md:gap-9 md:p-0"
+        className="mt-0 flex  w-full flex-col md:flexrow md:justify-start md:gap-9 md:px-8"
       >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
-          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md:hidden my-7">
+          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md:hiden my-7 md:my-0">
             {steps.map((value) => (
               <Tooltip
                 title={value.title}
@@ -98,7 +98,7 @@ const AboutPage: React.FunctionComponent<
             ))}
           </div>
           {/* desktop  */}
-          <div
+          {/* <div
             className="hidden h-fit min-w-max flex-col
              flex-wrap justify-between
             md:flex md:gap-0 md:px- "
@@ -123,9 +123,9 @@ const AboutPage: React.FunctionComponent<
                 </span>
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
-        <div className="w-full">
+        <div className="w-full mx-auto">
           {
             stepComponents[
               presentStep as keyof StepComponents
