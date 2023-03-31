@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
 import InstagramIcon from './components/Vectors/InstagramIcon';
 import TwitterIcon from './components/Vectors/TwitterIcon';
 import LinkedInIcon from './components/Vectors/LinkedInIcon';
@@ -18,8 +21,31 @@ function App() {
   const [isNavOpened, setIsNavOpened] =
     useState<boolean>(false);
 
+  const [isDarkMode, setIsDarkMode] =
+    useState<boolean>(true);
+
+  useEffect(() => {
+    if (
+      localStorage.getItem('color-theme') ===
+        'dark' ||
+      (!('color-theme' in localStorage) &&
+        window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches &&
+        isDarkMode)
+    ) {
+      document.documentElement.classList.add(
+        'dark'
+      );
+    } else {
+      document.documentElement.classList.remove(
+        'dark'
+      );
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="relative text-text-primary ">
+    <main className="relative text-text-primary transition-all duration-500 bg-primary_light dark:bg-primary">
       <div
         className={`overlay mobile_nav_backdrop z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'
@@ -29,6 +55,8 @@ function App() {
       <NavBar
         isNavOpened={isNavOpened}
         setIsNavOpened={setIsNavOpened}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
@@ -167,7 +195,7 @@ function App() {
           <MailIcon />{' '}
         </a>
       </div>
-    </div>
+    </main>
   );
 }
 

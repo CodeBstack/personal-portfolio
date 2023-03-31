@@ -42,6 +42,10 @@ interface NavBarProps {
   setIsNavOpened: React.Dispatch<
     React.SetStateAction<boolean>
   >;
+  isDarkMode: boolean;
+  setIsDarkMode: React.Dispatch<
+    React.SetStateAction<boolean>
+  >;
   selectedPage: string;
   setSelectedPage: React.Dispatch<
     React.SetStateAction<string>
@@ -53,11 +57,13 @@ const NavBar: React.FunctionComponent<
 > = ({
   isNavOpened,
   setIsNavOpened,
+  isDarkMode,
+  setIsDarkMode,
   selectedPage,
   setSelectedPage,
 }) => {
-  const [isDarkMode, setIsDarkMode] =
-    useState<boolean>(true);
+  // const [isDarkMode, setIsDarkMode] =
+  //   useState<boolean>(true);
   const [navBg, setNavBg] =
     useState<boolean>(false);
 
