@@ -29,7 +29,7 @@ type ProjectProps = {
 };
 
 const Project = ({ data }: ProjectProps) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+  const overlayStyles = `absolute h-full w-full opacity-90 transition duration-500 md:opacity-0 md:hover:opacity-90
   bg-grey z-30 flex flex-col justify-end p-6 text-left `;
 
   return (

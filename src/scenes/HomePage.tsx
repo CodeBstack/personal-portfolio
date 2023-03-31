@@ -39,7 +39,7 @@ const HomePage: React.FunctionComponent<
       id="home"
     >
       <div>
-        <p className="font-SF2 text-secondary mb-5 text-base">
+        <p className="font-SF2 text-secondary mb-3 md:mb-5 text-base">
           <span className={`${letterClass}`}>
             H
           </span>
@@ -84,7 +84,7 @@ const HomePage: React.FunctionComponent<
           I build interactive user interfaces and experience.
         </h1>
 
-        <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-text-primary md:text-xl mt-5">
+        <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-text-primary md:text-xl mt-3 md:mt-5">
           I'm a{' '}
           <span className="text-secondary">
             Frontend Developer
