@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import InstagramIcon from './components/Vectors/InstagramIcon';
 import TwitterIcon from './components/Vectors/TwitterIcon';
 import LinkedInIcon from './components/Vectors/LinkedInIcon';
-import AboutPage from './pages/About';
-import HomePage from './pages/HomePage';
-import NavBar from './pages/Navbar';
-import ProjectsPage from './pages/Projects';
-import ResumePage from './pages/ResumePage';
+import AboutPage from './scenes/About';
+import HomePage from './scenes/HomePage';
+import NavBar from './components/Navbar';
+import ProjectsPage from './scenes/Projects';
+import ResumePage from './scenes/ResumePage';
 import GithubIcon from './components/Vectors/GithubIcon';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './scenes/ContactPage';
 import { motion } from 'framer-motion';
+import MailIcon from './components/Vectors/MailIcon';
 
 function App() {
   const [selectedPage, setSelectedPage] =
@@ -157,6 +158,13 @@ function App() {
           rel="noopener noreferrer"
         >
           <LinkedInIcon />
+        </a>
+        <a
+          aria-label="Email Me"
+          title="Email Me"
+          href="mailto: ssamuelolumide@gmail.com"
+        >
+          <MailIcon />{' '}
         </a>
       </div>
     </div>

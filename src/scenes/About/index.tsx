@@ -1,5 +1,5 @@
 import { Tooltip } from '@mui/material';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Bio from './widgets/Bio';
 import Education from './widgets/Education';
 import Experience from './widgets/Experience';
@@ -14,6 +14,50 @@ const AboutPage: React.FunctionComponent<
   const [presentStep, setPresentStep] =
     useState<number>(1);
 
+  // useEffect(() => {
+  //   window.addEventListener(
+  //     'scroll',
+  //     handleScroll
+  //   );
+  //   return () =>
+  //     window.removeEventListener(
+  //       'scroll',
+  //       handleScroll
+  //     );
+  // }, []);
+
+  // const handleScroll = () => {
+  //   const contentSections =
+  //     document.querySelectorAll(
+  //       '.content-section'
+  //     );
+  //   // const cardElements = document.querySelectorAll('.card');
+  //   const scrollPosition =
+  //     window.scrollY + window.innerHeight / 2;
+
+  //   contentSections.forEach((section, index) => {
+  //     const sectionTop =
+  //       section.getBoundingClientRect().top;
+  //     console.log(sectionTop);
+  //     const sectionHeight = section.clientHeight;
+  //     if (
+  //       scrollPosition >= sectionTop &&
+  //       scrollPosition <
+  //         sectionTop + sectionHeight
+  //     ) {
+  //       setPresentStep(index + 1);
+  //     }
+  //   });
+
+  //   cardElements.forEach((card, index) => {
+  //     if (index + 1 === presentStep) {
+  //       card.classList.add('active');
+  //     } else {
+  //       card.classList.remove('active');
+  //     }
+  //   });
+  // };
+
   interface StepComponents {
     1: JSX.Element;
     2: JSX.Element;
@@ -26,8 +70,8 @@ const AboutPage: React.FunctionComponent<
     1: <Bio />,
     2: <Skills />,
     3: <Education />,
-    4: <Passion />,
-    5: <Experience />,
+    4: <Experience />,
+    5: <Passion />,
   };
 
   return (
@@ -66,39 +110,34 @@ const AboutPage: React.FunctionComponent<
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0 },
         }}
-        className="mt-0 flex  w-full flex-col md:flexrow md:justify-start md:gap-9 md:px-8"
+        className="mt-0 flex  w-full flex-col md:flex-row md:justify-start md:gap-9 md:px-8"
       >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
-          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md:hiden my-7 md:my-0">
+          <div className="flex gap- items-center noScrollBar overflow-x-auto flex-nowrap md:hidden my-7 md:my-0">
             {steps.map((value) => (
-              <Tooltip
-                title={value.title}
-                placement="top"
+              <button
+                key={value.id}
+                type="button"
+                onClick={() =>
+                  setPresentStep(value.id)
+                }
+                className="flex"
               >
-                <button
-                  key={value.id}
-                  type="button"
-                  onClick={() =>
-                    setPresentStep(value.id)
-                  }
-                  className="flex"
+                <span
+                  className={`font-SF2  px-5 pb-2 text-[16px] font-medium  ${
+                    presentStep === value.id
+                      ? 'border-b-[3px] border-secondary text-secondary'
+                      : 'text-text-primary'
+                  } `}
                 >
-                  <span
-                    className={`font-SF2  px-5 pb-2 text-[16px] font-medium  ${
-                      presentStep === value.id
-                        ? 'border-b-[3px] border-secondary text-secondary'
-                        : 'text-text-primary'
-                    } `}
-                  >
-                    {value.title}
-                  </span>
-                </button>
-              </Tooltip>
+                  {value.title}
+                </span>
+              </button>
             ))}
           </div>
           {/* desktop  */}
-          {/* <div
+          <div
             className="hidden h-fit min-w-max flex-col
              flex-wrap justify-between
             md:flex md:gap-0 md:px- "
@@ -123,9 +162,9 @@ const AboutPage: React.FunctionComponent<
                 </span>
               </button>
             ))}
-          </div> */}
+          </div>
         </div>
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto md:mt-3">
           {
             stepComponents[
               presentStep as keyof StepComponents
@@ -153,11 +192,11 @@ const steps = [
   },
 
   {
-    title: 'Passion',
+    title: 'Experience',
     id: 4,
   },
   {
-    title: 'Experience',
+    title: 'Passion',
     id: 5,
   },
 ];

@@ -4,9 +4,9 @@ const Passion: React.FunctionComponent<
   PassionProps
 > = () => {
   return (
-    <h1 className="font-SF3 text-secondary text-4xl">
+    <div className="min-h-screen content-section font-SF3 text-secondary text-4xl">
       Passion
-    </h1>
+    </div>
   );
 };
 

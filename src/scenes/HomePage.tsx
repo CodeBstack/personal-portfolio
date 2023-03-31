@@ -33,7 +33,6 @@ const HomePage: React.FunctionComponent<
     'e',
   ];
 
-
   return (
     <section
       className="relative pt-[30%] md:pt-0 text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
@@ -80,15 +79,9 @@ const HomePage: React.FunctionComponent<
             strArray={nameArray}
             idx={21}
           />
-          
         </h1>
-        <h1 className="heading_2 font-Calibre3 tra11em] text-text-primary text-4xl md:text-7xl">
-          I bring designs to life.{' '}
-          {/* <AnimatedLetters
-            letterClass={letterClass}
-            strArray={strArray}
-            idx={34}
-          /> */}
+        <h1 className="heading_2 font-Calibre3 text-text-primary text-2xl max-w-[90%] md:max-w-[65%] md:text-5xl">
+          I build interactive user interfaces and experience.
         </h1>
 
         <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-text-primary md:text-xl mt-5">
@@ -97,20 +90,9 @@ const HomePage: React.FunctionComponent<
             Frontend Developer
           </span>{' '}
           who specializes in creating exceptional
-          digital experiences on the web. I focus on creating
-          accessible, human-centered products.
+          digital experiences, accessible and
+          human-centered products on the web.
         </p>
-
-        {/* <div className="flex mt-6 items-center font-SF1 text-base text-[#A8B2D1] md:hidden">
-          Email me @&nbsp;
-          <a
-            href="mailto: ssamuelolumide@gmail.com"
-            className="hover:text-secondary rotate-0"
-          >
-            ssamuelolumide@gmail.com
-          </a>
-          <div className="h-px w-24 ml-10 bg-[#a8b2d1]"></div>
-        </div> */}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ const Bio: React.FunctionComponent<
   BioProps
 > = () => {
   return (
-    <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
+    <div className="flex flex-col gap-16 lg:flex-row  lg:gap8">
       <p className="flex-1 font-Calibre1 text-text-primary text-base md:text-xl max-w-[450px]">
         I'm an extremely ambitious Front-end
         developer looking for a position in a

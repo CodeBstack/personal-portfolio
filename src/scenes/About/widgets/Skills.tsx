@@ -64,7 +64,7 @@ const Skills: React.FunctionComponent<
           GRAPHQL
         </li>
       </ul>
-      <div className="flex-1  max-w-[450px] mb-40 md:mb-48 lg:mb-0 lg:mt-0 ">
+      <div className="flex-1  max-w-[450px] mb-40 md:mb-48 lg:mb-0 lg:mt-8 ">
         <div className="cubespinner">
           <div className="face1">
             <FaHtml5 color="#F06529" />
