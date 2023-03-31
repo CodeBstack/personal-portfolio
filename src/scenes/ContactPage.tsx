@@ -179,8 +179,6 @@ const ContactPage = () => {
           >
             Send Message
           </button>
-
-          {/* <Button variant='outlined' sx={{ width: 'fit-content' }}>Send Message</Button> */}
         </form>
       </motion.div>
 

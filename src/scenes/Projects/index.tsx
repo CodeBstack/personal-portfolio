@@ -166,7 +166,7 @@ const ProjectsPage: React.FunctionComponent<
 
         {/* <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]"> */}
         <motion.div
-          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8"
+          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md2:grid-cols-3 gap-5 md:gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"
