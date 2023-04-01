@@ -86,13 +86,14 @@ const EachProject: React.FunctionComponent<
             </a>
           </div>
         </div>
-        {/* <img
-        src={`../assets/${projectTitle}.jpeg`}
-        alt={projectTitle}
-      /> */}
-        <div
+        <img
+          className={` bg-[#233554] h-full object-cover`}
+          src={`${data.imgUrl}`}
+          alt={data.imgUrl}
+        />
+        {/* <div
           className={` bg-[#233554] h-full max-wpx]`}
-        ></div>
+        ></div> */}
       </motion.div>
 
       {/* DESKTOP */}
@@ -106,19 +107,22 @@ const EachProject: React.FunctionComponent<
           'flex-row-reverse'
         }`}
       >
-        <div
+        {/* <div
           className={`${
             data.layout === 'reverse' && '-ml-10'
-          } bg-[#233554] min-h-[360px] z-[-1] relative  w-1/2 max-w-[580px] object-cover`}
-        >
-          <img
-            className="!h-full !w-full absolute top-0 right-0 object-ver"
-            src={data.imgUrl}
-            alt={data.projectTitle}
-          />
-        </div>
+          } !bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+        > */}
+        <img
+          // className="!h-full !w-full absolute top-0 right-0 object-ver"
+          className={`${
+            data.layout === 'reverse' && '-ml-10'
+          } !bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+          src={data.imgUrl}
+          alt={data.projectTitle}
+        />
+        {/* </div> */}
         <div
-          className={` flex-1 flex ${
+          className={` flex-1 flex z-[1] ${
             data.layout === 'normal'
               ? 'items-end -ml-10'
               : 'items-start'
@@ -133,7 +137,7 @@ const EachProject: React.FunctionComponent<
 
           <div
             className={`${
-              data.layout === 'reverse' && 'z-10'
+              data.layout === 'reverse' && ''
             } rounded-[0px] bg-[#112240] p-6 mb-6 text-left`}
           >
             <p className="text-xl">

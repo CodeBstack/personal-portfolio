@@ -1,41 +1,61 @@
 import StarIcon from '@mui/icons-material/Star';
-import { useForm } from 'react-hook-form';
+import {
+  useForm,
+  SubmitHandler,
+} from 'react-hook-form';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 interface Props {
   className: string;
 }
 
+type FormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 const ContactPage = ({ className }: Props) => {
   const {
     register,
-    trigger,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm();
+  } = useForm<FormValues>();
 
-  const onSubmit = async () =>
-    // e: React.FormEvent<HTMLFormElement>
-    {
-      emailjs
-        .sendForm(
-          'service_lveo1m8',
-          'template_qcz012d',
-          '#form',
-          'c0ngDyg0sYLt5OQYc'
-        )
-        .then(
-          () => {
-            alert('Message successfully sent!');
-            //   window.location.reload(false);
-          },
-          () => {
-            alert(
-              'Failed to send the message, please try again'
-            );
-          }
-        );
+  const onSubmit: SubmitHandler<
+    FormValues
+  > = async (data) => {
+    // Setting each input data into the emailjs template keys.
+    let formValues = {
+      from_name: data.name,
+      email_id: data.email,
+      message: data.message,
     };
+
+    emailjs
+      .send(
+        'service_lveo1m8',
+        'template_qcz012d',
+        formValues,
+        'c0ngDyg0sYLt5OQYc'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent!');
+          reset({
+            name: '',
+            email: '',
+            message: '',
+          });
+        },
+        () => {
+          alert(
+            'Failed to send the message, please try again'
+          );
+        }
+      );
+  };
 
   return (
     <section
@@ -88,7 +108,7 @@ const ContactPage = ({ className }: Props) => {
           // method="POST"
           className="flex flex-col"
         >
-          <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb-3">
+          <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb3">
             <div className="w-full flex-1">
               <input
                 className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
@@ -135,7 +155,7 @@ const ContactPage = ({ className }: Props) => {
             </div>
           </div>
 
-          <input
+          {/* <input
             className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
             type="text"
             placeholder="Subject"
@@ -153,7 +173,7 @@ const ContactPage = ({ className }: Props) => {
                 'maxLength' &&
                 'Max length is 200 char.'}
             </p>
-          )}
+          )} */}
 
           <textarea
             className="w-full mt-3 bg-[#112240] font-SF1 placeholder-text-200 p-4"
