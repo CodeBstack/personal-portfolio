@@ -89,7 +89,7 @@ const EachProject: React.FunctionComponent<
         <img
           className={` bg-[#233554] h-full object-cover`}
           src={`${data.imgUrl}`}
-          alt={data.imgUrl}
+          alt={data.projectTitle}
         />
         {/* <div
           className={` bg-[#233554] h-full max-wpx]`}

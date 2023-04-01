@@ -23,7 +23,7 @@ export const truncateString = (
 export const projects: Projects[] = [
   {
     id: 1,
-    imgUrl: '/images/my-picture.jpg',
+    imgUrl: '',
     skills: [
       'HTML',
       'CSS',
@@ -39,7 +39,7 @@ export const projects: Projects[] = [
   },
   {
     id: 2,
-    imgUrl: '/images/Manage-landing-page.jpg',
+    imgUrl: '',
     skills: [
       'HTML',
       'CSS',
