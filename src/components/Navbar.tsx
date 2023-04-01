@@ -95,9 +95,9 @@ const NavBar: React.FunctionComponent<
     <nav
       className={`${
         navBg && !isNavOpened
-          ? 'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop fixed top-0  transition-all duration-200'
+          ? 'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop '
           : '-top-[100vh]'
-      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] md:text-sm`}
+      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] sticky top-0  transition-all duration-200 md:text-sm`}
     >
       <Logo />
       <div className="hidden gap-10 items-center md:flex">
