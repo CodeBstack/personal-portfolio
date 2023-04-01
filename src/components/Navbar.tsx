@@ -97,7 +97,7 @@ const NavBar: React.FunctionComponent<
         navBg && !isNavOpened
           ? 'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop '
           : '-top-[100vh]'
-      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] sticky top-0  transition-all duration-200 md:text-sm`}
+      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
     >
       <Logo />
       <div className="hidden gap-10 items-center md:flex">
@@ -197,7 +197,7 @@ const NavBar: React.FunctionComponent<
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nWKBmgszb1N4Cb0radzbVpzqrZqgM7XJ/view?usp=share_link"
           className="w-full max-w-[152px] py-[18px] text-center border-2 border-secondary bg-transparent font-SF2 text-secondary rounded-[5px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
         >
           Resume

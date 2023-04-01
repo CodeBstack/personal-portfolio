@@ -8,9 +8,9 @@ import './assets/fonts/SFMonoBold.ttf';
 import './assets/fonts/CalibreRegular.ttf';
 import './assets/fonts/CalibreMedium.ttf';
 import './assets/fonts/CalibreBold.ttf';
-import CustomCursor from './components/CustomCursor';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import CustomCursor from './components/CustomCursor';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -33,7 +33,7 @@ const CustomCursor = () => {
         mainCursor.current.clientHeight / 2}px, 0)`;
     });
 
-    return () => {};
+    return () => { };
   }, []);
 
   React.useEffect(() => {
@@ -55,7 +55,7 @@ const CustomCursor = () => {
         positionRef.current.distanceY = (mouseY - destinationY) * 0.1;
         if (
           Math.abs(positionRef.current.distanceX) +
-            Math.abs(positionRef.current.distanceY) <
+          Math.abs(positionRef.current.distanceY) <
           0.1
         ) {
           positionRef.current.destinationX = mouseX;

@@ -56,7 +56,7 @@ const ResumePage: React.FunctionComponent<
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nWKBmgszb1N4Cb0radzbVpzqrZqgM7XJ/view?usp=share_link"
           className="text-secondary"
         >
           View
@@ -65,7 +65,7 @@ const ResumePage: React.FunctionComponent<
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nWKBmgszb1N4Cb0radzbVpzqrZqgM7XJ/view?usp=share_link"
           className="text-secondary"
           download
         >

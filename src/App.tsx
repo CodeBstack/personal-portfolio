@@ -65,7 +65,7 @@ function App() {
           }
         >
           <AboutPage
-            className={`pt-[25%] md:pt-[100px]`}
+            className={`pt[50px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -74,7 +74,7 @@ function App() {
           }
         >
           <ProjectsPage
-            className={`pt-[25%] md:pt-[100px]`}
+            className={`pt[50px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -83,7 +83,7 @@ function App() {
           }
         >
           <ResumePage
-            className={`pt-[25%] md:pt-[100px]`}
+            className={`pt[50px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -92,7 +92,7 @@ function App() {
           }
         >
           <ContactPage
-            className={`pt-[25%] md:pt-[100px]`}
+            className={`pt[50px] pt-[100px]`}
           />
         </motion.div>
       </div>
