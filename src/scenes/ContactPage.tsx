@@ -2,8 +2,11 @@ import StarIcon from '@mui/icons-material/Star';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+interface Props {
+  className: string;
+}
 
-const ContactPage = () => {
+const ContactPage = ({ className }: Props) => {
   const {
     register,
     trigger,
@@ -37,7 +40,7 @@ const ContactPage = () => {
   return (
     <section
       id="contact"
-      className="overflow-x-hidden contact pt-[25%] md:pt-[100px]"
+      className={`overflow-x-hidden contact ${className}`}
     >
       {/* HEADINGS */}
       <motion.div
@@ -52,7 +55,7 @@ const ContactPage = () => {
         className="text-center items-center flex gap-4 md:gap-6 flex-col mb-[40px]"
       >
         <div className="text-center items-center flex gap-4 md:gap-6 flex-col">
-          <p className="font-SF2 text-secondary text-base md:mt-4 md:text-xl">
+          <p className="font-SF2 text-secondary text-base md:mt4 md:text-xl">
             <span className="mr-6">04.</span>{' '}
             What's Next?
           </p>

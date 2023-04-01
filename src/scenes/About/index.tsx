@@ -6,57 +6,15 @@ import Experience from './widgets/Experience';
 import Passion from './widgets/Passion';
 import Skills from './widgets/Skills';
 import { motion } from 'framer-motion';
-interface AboutPageProps {}
+interface AboutPageProps {
+  className: string;
+}
 
 const AboutPage: React.FunctionComponent<
   AboutPageProps
-> = () => {
+> = ({ className }) => {
   const [presentStep, setPresentStep] =
     useState<number>(1);
-
-  // useEffect(() => {
-  //   window.addEventListener(
-  //     'scroll',
-  //     handleScroll
-  //   );
-  //   return () =>
-  //     window.removeEventListener(
-  //       'scroll',
-  //       handleScroll
-  //     );
-  // }, []);
-
-  // const handleScroll = () => {
-  //   const contentSections =
-  //     document.querySelectorAll(
-  //       '.content-section'
-  //     );
-  //   // const cardElements = document.querySelectorAll('.card');
-  //   const scrollPosition =
-  //     window.scrollY + window.innerHeight / 2;
-
-  //   contentSections.forEach((section, index) => {
-  //     const sectionTop =
-  //       section.getBoundingClientRect().top;
-  //     console.log(sectionTop);
-  //     const sectionHeight = section.clientHeight;
-  //     if (
-  //       scrollPosition >= sectionTop &&
-  //       scrollPosition <
-  //         sectionTop + sectionHeight
-  //     ) {
-  //       setPresentStep(index + 1);
-  //     }
-  //   });
-
-  //   cardElements.forEach((card, index) => {
-  //     if (index + 1 === presentStep) {
-  //       card.classList.add('active');
-  //     } else {
-  //       card.classList.remove('active');
-  //     }
-  //   });
-  // };
 
   interface StepComponents {
     1: JSX.Element;
@@ -76,7 +34,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className="md:min-hscreen lg:mb-20 sticky top-0 left-0 pt-[25%] md:pt-[100px] relatve md:mb-0 "
+      className={`md:min-hscreen lg:mb-20 pt-[25%] md:pt-[100px]  relatve md:mb-0 ${className}`}
       id="about"
     >
       <motion.div

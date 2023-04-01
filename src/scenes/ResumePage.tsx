@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 
-interface ResumePageProps {}
+interface ResumePageProps {
+  className: string;
+}
 
 const ResumePage: React.FunctionComponent<
   ResumePageProps
-> = () => {
+> = ({ className }) => {
   return (
     <section
-      className="h-[50vh] md:h-screen pt-[25%] md:py-[100px] relative mb-[44px] md:mb-0 "
+      className={`h-[50vh] md:h-screen  relative mb-[44px] md:mb-0 ${className}`}
       id="resume"
     >
       <motion.div

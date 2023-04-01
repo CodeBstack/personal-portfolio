@@ -3,9 +3,13 @@ import NightsStayOutlinedIcon from '@mui/icons-material/NightsStayOutlined';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import MenuIcon from './Vectors/MenuIcon';
 import { IconButton } from '@mui/material';
-import { useState, useEffect } from 'react';
+import React, {
+  useState,
+  useEffect,
+} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import CloseIcon from './Vectors/CloseIcon';
+// import { useScrollDirection } from './ScrollDirection';
 
 type LinkProps = {
   page: string;
@@ -62,10 +66,10 @@ const NavBar: React.FunctionComponent<
   selectedPage,
   setSelectedPage,
 }) => {
-  // const [isDarkMode, setIsDarkMode] =
-  //   useState<boolean>(true);
   const [navBg, setNavBg] =
     useState<boolean>(false);
+
+  // const scrollDirection = useScrollDirection();
 
   useEffect(() => {
     const handleScrollButtonVisibility = () => {
@@ -90,20 +94,12 @@ const NavBar: React.FunctionComponent<
   return (
     <nav
       className={`${
-        navBg &&
-        !isNavOpened &&
-        'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop'
-      } z-[100] px-[5%] w-full fixed top-0 transition-all duration-200 ease-linear py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] md:text-sm`}
+        navBg && !isNavOpened
+          ? 'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop fixed top-0  transition-all duration-200'
+          : '-top-[100vh]'
+      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] md:text-sm`}
     >
-      <AnchorLink
-        href={`#home`}
-        onClick={() => {
-          setSelectedPage('home');
-          setIsNavOpened(false);
-        }}
-      >
-        <Logo />
-      </AnchorLink>
+      <Logo />
       <div className="hidden gap-10 items-center md:flex">
         {NavLinks.map((link, i) => (
           <Link
@@ -142,72 +138,71 @@ const NavBar: React.FunctionComponent<
       </div>
 
       {/* MOBILE NAV SIDEBAR */}
-     
-        <aside
-          className={`flex md:hidden px-[7%] overflow-yauto transition-all duration-500 flex-col items-center z-[70] fixed top-0 h-screen bg-[#020A13] ${
-            isNavOpened
-              ? 'right-0 w-[70%]'
-              : '-right-[100vw]'
-          } `}
+      <aside
+        className={`flex md:hidden px-[7%] overflow-yauto transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-[#020A13] ${
+          isNavOpened
+            ? 'right-0 w-[70%]'
+            : '-right-[100vw]'
+        } `}
+      >
+        <IconButton
+          sx={{
+            position: 'absolute',
+            right: '5%',
+            top: '20px',
+          }}
+          onClick={() => setIsNavOpened(false)}
         >
+          <CloseIcon />
+        </IconButton>
+
+        <div className="w-full flex mt-[104px] mb-12 gap-6 flex-col text-center">
           <IconButton
-            sx={{
-              position: 'absolute',
-              right: '5%',
-              top: '20px',
-            }}
-            onClick={() => setIsNavOpened(false)}
+            onClick={() =>
+              setIsDarkMode(!isDarkMode)
+            }
           >
-            <CloseIcon />
+            {isDarkMode ? (
+              <NightsStayIcon
+                fontSize="medium"
+                sx={{ color: '#CCD6F6' }}
+              />
+            ) : (
+              <NightsStayOutlinedIcon
+                fontSize="medium"
+                sx={{ color: '#CCD6F6' }}
+              />
+            )}
           </IconButton>
 
-          <div className="w-full flex mt-[104px] mb-12 gap-6 flex-col text-center">
-            <IconButton
-              onClick={() =>
-                setIsDarkMode(!isDarkMode)
-              }
+          {NavLinks.map((navlink, i) => (
+            <AnchorLink
+              key={i}
+              className="hover:bg-primary py-2 rounded-[8px]"
+              href={`#${navlink.text.toLocaleLowerCase()}`}
+              onClick={() => {
+                setSelectedPage(
+                  navlink.text.toLocaleLowerCase()
+                );
+                setIsNavOpened(false);
+              }}
             >
-              {isDarkMode ? (
-                <NightsStayIcon
-                  fontSize="medium"
-                  sx={{ color: '#CCD6F6' }}
-                />
-              ) : (
-                <NightsStayOutlinedIcon
-                  fontSize="medium"
-                  sx={{ color: '#CCD6F6' }}
-                />
-              )}
-            </IconButton>
-
-            {NavLinks.map((navlink, i) => (
-              <AnchorLink
-                key={i}
-                className="hover:bg-primary py-2 rounded-[8px]"
-                href={`#${navlink.text.toLocaleLowerCase()}`}
-                onClick={() => {
-                  setSelectedPage(
-                    navlink.text.toLocaleLowerCase()
-                  );
-                  setIsNavOpened(false);
-                }}
-              >
-                <p className="text-secondary mb-[4px]">
-                  {navlink.pos}
-                </p>
-                <p>{navlink.text}</p>
-              </AnchorLink>
-            ))}
-          </div>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
-            className="w-full max-w-[152px] py-[18px] text-center border-2 border-secondary bg-transparent font-SF2 text-secondary rounded-[5px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
-          >
-            Resume
-          </a>
-        </aside>
+              <p className="text-secondary mb-[4px]">
+                {navlink.pos}
+              </p>
+              <p>{navlink.text}</p>
+            </AnchorLink>
+          ))}
+        </div>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://drive.google.com/file/d/1JiCcfzAtOYUUes-SjT-jRfRkNyF4FBnd/view?usp=sharing"
+          className="w-full max-w-[152px] py-[18px] text-center border-2 border-secondary bg-transparent font-SF2 text-secondary rounded-[5px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
+        >
+          Resume
+        </a>
+      </aside>
     </nav>
   );
 };

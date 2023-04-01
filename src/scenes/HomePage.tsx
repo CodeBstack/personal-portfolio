@@ -24,18 +24,18 @@ const HomePage: React.FunctionComponent<
     'e',
     'l',
     '',
-    'O',
-    'l',
+    'S',
     'u',
+    'n',
     'm',
-    'i',
-    'd',
-    'e',
+    'o',
+    'n',
+    'u',
   ];
 
   return (
     <section
-      className="relative pt-[30%] md:pt-0 text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
+      className="relative pt-[10%] md:pt-0 text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-[75vh]"
       id="home"
     >
       <div>

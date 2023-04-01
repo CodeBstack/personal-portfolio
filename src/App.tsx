@@ -1,6 +1,7 @@
 import React, {
   useEffect,
   useState,
+  useCallback,
 } from 'react';
 import InstagramIcon from './components/Vectors/InstagramIcon';
 import TwitterIcon from './components/Vectors/TwitterIcon';
@@ -18,6 +19,7 @@ import MailIcon from './components/Vectors/MailIcon';
 function App() {
   const [selectedPage, setSelectedPage] =
     useState<string>('home');
+
   const [isNavOpened, setIsNavOpened] =
     useState<boolean>(false);
 
@@ -25,27 +27,15 @@ function App() {
     useState<boolean>(true);
 
   useEffect(() => {
-    if (
-      localStorage.getItem('color-theme') ===
-        'dark' ||
-      (!('color-theme' in localStorage) &&
-        window.matchMedia(
-          '(prefers-color-scheme: dark)'
-        ).matches &&
-        isDarkMode)
-    ) {
-      document.documentElement.classList.add(
-        'dark'
-      );
-    } else {
-      document.documentElement.classList.remove(
-        'dark'
-      );
-    }
+    const className = isDarkMode
+      ? 'dark'
+      : 'light';
+    document.documentElement.className =
+      className;
   }, [isDarkMode]);
 
   return (
-    <main className="relative text-text-primary transition-all duration-500 bg-primary_light dark:bg-primary">
+    <main className="relative text-text-primary transition-all duration-500 dark:bg-primary bg-white">
       <div
         className={`overlay mobile_nav_backdrop z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'
@@ -74,28 +64,36 @@ function App() {
             setSelectedPage('about')
           }
         >
-          <AboutPage />
+          <AboutPage
+            className={`pt-[25%] md:pt-[100px]`}
+          />
         </motion.div>
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('projects')
           }
         >
-          <ProjectsPage />
+          <ProjectsPage
+            className={`pt-[25%] md:pt-[100px]`}
+          />
         </motion.div>
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('resume')
           }
         >
-          <ResumePage />
+          <ResumePage
+            className={`pt-[25%] md:pt-[100px]`}
+          />
         </motion.div>
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('contact')
           }
         >
-          <ContactPage />
+          <ContactPage
+            className={`pt-[25%] md:pt-[100px]`}
+          />
         </motion.div>
       </div>
       <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">

@@ -103,14 +103,14 @@ const Project = ({ data }: ProjectProps) => {
   );
 };
 
-interface ProjectsPageProps {}
+interface ProjectsPageProps {className:string}
 
 const ProjectsPage: React.FunctionComponent<
   ProjectsPageProps
-> = () => {
+> = ({className}) => {
   return (
     <section
-      className="projects min-h-screen pt-[25%] md:py-[100px] relative mb-[44px] md:mb-0 "
+      className={`projects min-h-screen  relative mb-[44px] md:mb-0 ${className}`}
       id="projects"
     >
       <motion.div
