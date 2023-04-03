@@ -95,7 +95,7 @@ const NavBar: React.FunctionComponent<
     <nav
       className={`${
         navBg && !isNavOpened
-          ? 'bg-[rgba(10, 25, 47, 0.7)] desktop_nav_backdrop '
+          ? 'desktop_nav_backdrop '
           : '-top-[100vh]'
       } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
     >
@@ -139,7 +139,7 @@ const NavBar: React.FunctionComponent<
 
       {/* MOBILE NAV SIDEBAR */}
       <aside
-        className={`flex md:hidden px-[7%] overflow-yauto transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-[#020A13] ${
+        className={`flex md:hidden px-[7%] overflow-yauto transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-[#112240] ${
           isNavOpened
             ? 'right-0 w-[70%]'
             : '-right-[100vw]'

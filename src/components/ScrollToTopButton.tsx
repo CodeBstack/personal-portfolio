@@ -43,7 +43,7 @@ function ScrollToTopButton() {
   return (
     <>
       <div
-        className={`transition-all duration-300 fixed bottom-20 right-5 z-[900] h-[32px] w-[32px] md:h-[50px] md:w-[50px] items-center justify-center rounded-[10px] bg-text-200 md:bottom-5 md:right-7 ${
+        className={`transition-all duration-300 fixed bottom-20 right-5 z-[100] h-[32px] w-[32px] md:h-[50px] md:w-[50px] items-center justify-center rounded-[10px] bg-text-200 md:bottom-5 md:right-5 ${
           showButton ? 'flex' : 'hidden'
         }`}
         title="Scroll Button"

@@ -34,7 +34,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className={`md:min-hscreen lg:mb-20 pt-[25%] md:pt-[100px]  relatve md:mb-0 ${className}`}
+      className={`md:min-hscreen mb10 lg:mb-20 pt-[25%] md:pt-[100px]  relatve md:mb-0 ${className}`}
       id="about"
     >
       <motion.div

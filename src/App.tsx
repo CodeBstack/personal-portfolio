@@ -35,11 +35,12 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <main className="relative text-text-primary transition-all duration-500 dark:bg-primary bg-white">
+    <main className="relative max-w-[1440px] mx-auto text-text-primary transition-all duration-500 dark:bg-primary bg-white">
       <div
-        className={`overlay mobile_nav_backdrop z-[99] fixed top-0 left-0 h-screen w-full ${
+        className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'
         }`}
+        onClick={() => setIsNavOpened(false)}
       ></div>
 
       <NavBar
@@ -50,7 +51,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:pb-[5%] md:px-[10%]">
+      <div className="mxauto  px-4 sm:px-6 md:pb-[5%] md:px-[10%]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')
@@ -65,7 +66,7 @@ function App() {
           }
         >
           <AboutPage
-            className={`pt[50px] pt-[100px]`}
+            className={`pt[80px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -74,7 +75,7 @@ function App() {
           }
         >
           <ProjectsPage
-            className={`pt[50px] pt-[100px]`}
+            className={`pt[80px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -83,7 +84,7 @@ function App() {
           }
         >
           <ResumePage
-            className={`pt[50px] pt-[100px]`}
+            className={`pt[80px] pt-[100px]`}
           />
         </motion.div>
         <motion.div
@@ -92,7 +93,7 @@ function App() {
           }
         >
           <ContactPage
-            className={`pt[50px] pt-[100px]`}
+            className={`pt[80px] pt-[100px]`}
           />
         </motion.div>
       </div>
