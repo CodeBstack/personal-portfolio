@@ -5,6 +5,13 @@ import {
 } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+
+import InstagramIcon from '../components/Vectors/InstagramIcon';
+import TwitterIcon from '../components/Vectors/TwitterIcon';
+import LinkedInIcon from '../components/Vectors/LinkedInIcon';
+import GithubIcon from '../components/Vectors/GithubIcon';
+import MailIcon from '../components/Vectors/MailIcon';
+
 interface Props {
   className: string;
 }
@@ -206,9 +213,55 @@ const ContactPage = ({ className }: Props) => {
       </motion.div>
 
       <div className="flex flex-col items-center mt-40 w-full ">
+        <div className="flex mb-[30px]  md:hidden footer_socials ">
+          <a
+            aria-label="Go to Samuel Olumide Github page"
+            title="Github page"
+            href="https://github.com/CodeBstack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubIcon />
+          </a>
+          <a
+            aria-label="Go to Samuel Olumide Instagram page"
+            title="Instagram page"
+            href="https://www.instagram.com/samuel__olumide/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            aria-label="Go to Samuel Olumide Twitter page"
+            title="Twitter page"
+            href="https://twitter.com/SunmonuSam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TwitterIcon />
+          </a>
+          <a
+            aria-label="Go to Samuel Olumide LinkedIn page"
+            title="LinkedIn page"
+            href="https://www.linkedin.com/in/samuel-sunmonu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            aria-label="Email Me"
+            title="Email Me"
+            href="mailto: ssamuelolumide@gmail.com"
+          >
+            <MailIcon />{' '}
+          </a>
+        </div>
         <p className="font-SF1 text-xs md:text-sm text-text-200 mb-2">
           Developed by Samuel Olumide
         </p>
+
         {/* MOBILE STARS */}
         <div className="flex md:hidden gap-2 items-center">
           <StarIcon
@@ -241,7 +294,6 @@ const ContactPage = ({ className }: Props) => {
           />
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };
