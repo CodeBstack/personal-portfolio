@@ -140,8 +140,8 @@ const ContactPage = ({ className }: Props) => {
 
             <div className="w-full flex-1">
               <input
-                className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-light-text dark:placeholder-text-200 p-4"
-                type="text"
+                className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
+                type="email"
                 placeholder="Email"
                 {...register('email', {
                   required: true,
