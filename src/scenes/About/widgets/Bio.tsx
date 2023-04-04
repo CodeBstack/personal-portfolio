@@ -8,7 +8,7 @@ const Bio: React.FunctionComponent<
 > = () => {
   return (
     <div className="flex flex-col gap-16 lg:flex-row  lg:gap8">
-      <p className="flex-1 font-Calibre1 text-text-primary text-base md:text-xl max-w-[450px]">
+      <p className="flex-1 font-Calibre1 text-light-text dark:text-text-primary text-base md:text-xl max-w-[450px]">
         I'm an extremely ambitious Front-end
         developer looking for a position in a
         reputable IT firm where I can use the

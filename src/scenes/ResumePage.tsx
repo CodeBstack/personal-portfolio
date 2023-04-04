@@ -24,14 +24,14 @@ const ResumePage: React.FunctionComponent<
         }}
       >
         <div className="flex gap-4 md:gap-6 items-center">
-          <h1 className="text-secondary text-[26px] md:text-[32px]  font-SF2 ">
+          <h1 className="text-light-text dark:text-secondary text-[26px] md:text-[32px]  font-SF2 ">
             03.
           </h1>
-          <h1 className="text-text-200 text-[26px] md:text-[32px] font-SF3">
+          <h1 className="text-primary-dark dark:text-text-200 text-[26px] md:text-[32px] font-SF3">
             Resume
           </h1>
         </div>
-        <div className="h-px bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
+        <div className="h-px bg-primary-dark dark:bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
       </motion.div>
       <motion.p
         initial="hidden"
@@ -48,7 +48,7 @@ const ResumePage: React.FunctionComponent<
         <a
           rel="noopener noreferrer"
           href="#contact"
-          className="text-secondary"
+          className="text-secondary-dark dark:text-secondary"
         >
           contact page
         </a>
@@ -57,7 +57,7 @@ const ResumePage: React.FunctionComponent<
           rel="noopener noreferrer"
           target="_blank"
           href="https://drive.google.com/file/d/1nWKBmgszb1N4Cb0radzbVpzqrZqgM7XJ/view?usp=share_link"
-          className="text-secondary"
+          className="text-secondary-dark dark:text-secondary"
         >
           View
         </a>{' '}
@@ -66,7 +66,7 @@ const ResumePage: React.FunctionComponent<
           target="_blank"
           rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1nWKBmgszb1N4Cb0radzbVpzqrZqgM7XJ/view?usp=share_link"
-          className="text-secondary"
+          className="text-secondary-dark dark:text-secondary"
           download
         >
           download

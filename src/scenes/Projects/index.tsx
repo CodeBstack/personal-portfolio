@@ -41,10 +41,10 @@ const Project = ({ data }: ProjectProps) => {
       className="relative"
     >
       <div className={overlayStyles}>
-        <p className="font-SF2 text-secondary mb-2 text-[13px]">
+        <p className="font-SF2 text-secondary-dark dark:text-secondary mb-2 text-[13px]">
           Featured Projects
         </p>
-        <p className="font-Calibre2 text-text-200 text-[24px]">
+        <p className="font-Calibre2 text-primary-dark dark:text-text-200 text-[24px]">
           {data.projectTitle}
         </p>
 
@@ -97,7 +97,7 @@ const Project = ({ data }: ProjectProps) => {
         alt={projectTitle}
       /> */}
       <div
-        className={` bg-[#233554] h-[471px] max-wpx]`}
+        className={`bg-[#020A13] dark:bg-[#233554] h-[471px] max-wpx]`}
       ></div>
     </motion.div>
   );
@@ -125,14 +125,14 @@ const ProjectsPage: React.FunctionComponent<
         }}
       >
         <div className="flex gap-4 md:gap-6 items-center">
-          <h1 className="text-secondary text-[26px] md:text-[32px]  font-SF2 ">
+          <h1 className="text-light-text dark:text-secondary text-[26px] md:text-[32px]  font-SF2 ">
             02.
           </h1>
-          <h1 className="text-text-200 text-[26px] md:text-[32px] font-SF3">
+          <h1 className="text-primary-dark dark:text-text-200 text-[26px] md:text-[32px] font-SF3">
             Projects
           </h1>
         </div>
-        <div className="h-px bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
+        <div className="h-px bg-primary-dark dark:bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
       </motion.div>
 
       <motion.div
@@ -151,7 +151,7 @@ const ProjectsPage: React.FunctionComponent<
       </motion.div>
 
       <div className="mt-28 md:mt-60 text-center">
-        <h2 className="font-Calibre2 text-text-200 text-2xl text-[32px]">
+        <h2 className="font-Calibre2 text-secondary-dark dark:text-text-200 text-2xl text-[32px]">
           Other Projects Worth Noting
         </h2>
 
@@ -159,7 +159,7 @@ const ProjectsPage: React.FunctionComponent<
           target="_blank"
           rel="noreferrer"
           href="https://github.com/CodeBstack?tab=repositories"
-          className="font-SF1 text-secondary mt-2"
+          className="font-SF1 text-secondary-dark dark:text-secondary mt-2"
         >
           View my archive
         </a>

@@ -32,10 +32,10 @@ const EachProject: React.FunctionComponent<
         className="relative block md:hidden h-[471px]"
       >
         <div className={overlayStyles}>
-          <p className="font-SF2 text-secondary mb-2 text-[13px]">
+          <p className="font-SF2 text-secondary-dark dark:text-secondary mb-2 text-[13px]">
             Featured Projects
           </p>
-          <p className="font-Calibre2 text-text-200 text-[24px]">
+          <p className="font-Calibre2 text-primary-dark dark:text-text-200 text-[24px]">
             {data.projectTitle}
           </p>
 
@@ -56,7 +56,7 @@ const EachProject: React.FunctionComponent<
             {data.skills?.map((skill, i) => (
               <p
                 key={i}
-                className="text-300 font-SF2 text-[13px]"
+                className="text-light-text dark:text-text-300 font-SF2 text-[13px]"
               >
                 {skill}
               </p>
@@ -87,12 +87,12 @@ const EachProject: React.FunctionComponent<
           </div>
         </div>
         <img
-          className={` bg-[#233554] h-full object-cover`}
+          className={`bg-[#020A13] dark:bg-[#233554] h-full object-cover`}
           src={`${data.imgUrl}`}
           alt={data.projectTitle}
         />
         {/* <div
-          className={` bg-[#233554] h-full max-wpx]`}
+          className={`bg-[#020A13 dark:bg-[#233554] h-full max-wpx]`}
         ></div> */}
       </motion.div>
 
@@ -110,13 +110,13 @@ const EachProject: React.FunctionComponent<
         {/* <div
           className={`${
             data.layout === 'reverse' && '-ml-10'
-          } !bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+          } bg-[#020A13!dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
         > */}
         <img
           // className="!h-full !w-full absolute top-0 right-0 object-ver"
           className={`${
             data.layout === 'reverse' && '-ml-10'
-          } !bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+          } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
           src={data.imgUrl}
           alt={data.projectTitle}
         />
@@ -128,17 +128,17 @@ const EachProject: React.FunctionComponent<
               : 'items-start'
           } flex-col text-right`}
         >
-          <p className="font-SF2 text-secondary mb-2 text-[13px]">
+          <p className="font-SF2 text-secondary-dark dark:text-secondary mb-2 text-[13px]">
             Featured Projects
           </p>
-          <p className="font-Calibre2 text-text-200 mb-8 text-[28px]">
+          <p className="font-Calibre2 text-primary-dark dark:text-text-200 mb-8 text-[28px]">
             {data.projectTitle}
           </p>
 
           <div
             className={`${
               data.layout === 'reverse' && ''
-            } rounded-[0px] bg-[#112240] p-6 mb-6 text-left`}
+            } rounded-[0px] bg-[#F1EFEE] dark:bg-[#112240] p-6 mb-6 text-left`}
           >
             <p className="text-xl">
               {data.projectDesc}
@@ -155,7 +155,7 @@ const EachProject: React.FunctionComponent<
             {data.skills?.map((skill, i) => (
               <p
                 key={i}
-                className="text-300 font-SF2 text-[13px]"
+                className="text-light-text dark:text-text-light-text dark:text-text-300 font-SF2 text-[13px]"
               >
                 {skill}
               </p>

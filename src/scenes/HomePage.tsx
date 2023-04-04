@@ -35,11 +35,11 @@ const HomePage: React.FunctionComponent<
 
   return (
     <section
-      className="relative pt-[30%] md:pt-[0%] text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
+      className="relative pt-[30%] md:pt-[0%] text-light-text dark:text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
       id="home"
     >
       <div>
-        <p className="font-SF2 text-secondary mb-3 text-base">
+        <p className="font-SF2 text-light-text dark:text-secondary  mb-3 text-base">
           <span className={`${letterClass}`}>
             H
           </span>
@@ -72,7 +72,7 @@ const HomePage: React.FunctionComponent<
           </span>
           {/* Hi, my name is */}
         </p>
-        <h1 className="font-Calibre3 trackin-[0.011em] text-nav-text text-4xl md:text-7xl">
+        <h1 className="font-Calibre3 trackin-[0.011em] text-primary-dark dark:text-nav-text text-4xl md:text-7xl">
           {/* Samuel Olumide */}
           <AnimatedLetters
             letterClass={letterClass}
@@ -80,14 +80,14 @@ const HomePage: React.FunctionComponent<
             idx={21}
           />
         </h1>
-        <h1 className="heading_2 font-Calibre3 text-text-primary text-2xl max-w-[90%] md:max-w-[65%] md:text-5xl">
+        <h1 className="heading_2 font-Calibre3 text-light-text dark:text-text-primary text-2xl max-w-[90%] md:max-w-[65%] md:text-5xl">
           I build interactive  user
           interfaces and experience.
         </h1>
 
-        <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-text-primary md:text-xl mt-3 ">
+        <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-light-text dark:text-text-primary md:text-xl mt-3 ">
           I'm a{' '}
-          <span className="text-secondary">
+          <span className="text-secondary-dark dark:text-secondary">
             Frontend Developer
           </span>{' '}
           who specializes in creating exceptional

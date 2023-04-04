@@ -14,53 +14,53 @@ const Skills: React.FunctionComponent<
 > = () => {
   return (
     <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
-      <ul className="flex-1 font-SF2 md:mt10 text-text-200 text-base grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
+      <ul className="flex-1 font-SF2 md:mt10 text-light-text dark:text-text-200 text-base grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           HTML
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           CSS
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           SCSS
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           TAILWINDCSS
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           MATERIAL UI
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           JAVASCRIPT
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           TYPESCRIPT
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           REACT JS
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           NEXT JS
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           REDUX
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           REDUX TOOLKIT
         </li>
         <li className="flex gap-2 items-center">
-          <span className="rounded-full bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           GRAPHQL
         </li>
       </ul>

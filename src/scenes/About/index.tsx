@@ -49,14 +49,14 @@ const AboutPage: React.FunctionComponent<
         }}
       >
         <div className="flex gap-4 md:gap-6 items-center">
-          <h1 className="text-secondary text-[26px] md:text-[32px]  font-SF2 ">
+          <h1 className="text-light-text dark:text-secondary text-[26px] md:text-[32px]  font-SF2 ">
             01.
           </h1>
-          <h1 className="text-text-200 text-[26px] md:text-[32px] font-SF3">
+          <h1 className="text-primary-dark dark:text-text-200 text-[26px] md:text-[32px] font-SF3">
             About Me
           </h1>
         </div>
-        <div className="h-px bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
+        <div className="h-px bg-primary-dark dark:bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
       </motion.div>
 
       <motion.div
@@ -85,8 +85,8 @@ const AboutPage: React.FunctionComponent<
                 <span
                   className={`font-SF2  px-5 pb-2 text-[16px] font-medium  ${
                     presentStep === value.id
-                      ? 'border-b-[3px] border-secondary text-secondary'
-                      : 'text-text-primary'
+                      ? 'border-b-[3px] border-secondary-dark dark:border-secondary text-secondary-dark dark:text-secondary'
+                      : 'text-light-text dark:text-text-primary'
                   } `}
                 >
                   {value.title}
@@ -110,10 +110,10 @@ const AboutPage: React.FunctionComponent<
                 className="flex items-center gap-4"
               >
                 <span
-                  className={`font-SF2 border-l px-5 py-3 border-[#233554] text-[16px] font-medium  ${
+                  className={`font-SF2 border-l px-5 py-3  text-[16px] font-medium  ${
                     presentStep === value.id
-                      ? 'border-l border-secondary text-secondary'
-                      : 'text-text-primary'
+                      ? 'border-l border-secondary-dark dark:border-secondary text-secondary-dark dark:text-secondary'
+                      : 'border-[#CCD6F6] dark:border-[#233554] text-light-text dark:text-text-primary'
                   } `}
                 >
                   {value.title}

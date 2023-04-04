@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import CloseIcon from './Vectors/CloseIcon';
-// import { useScrollDirection } from './ScrollDirection';
+import LogoIconDark from './Vectors/LogoIconDark';
 
 type LinkProps = {
   page: string;
@@ -33,7 +33,7 @@ const Link = ({
         setSelectedPage(lowerCasePage)
       }
     >
-      <span className="text-secondary">
+      <span className="text-primary-dark dark:text-secondary">
         {pos}{' '}
       </span>
       {page}
@@ -95,11 +95,11 @@ const NavBar: React.FunctionComponent<
     <nav
       className={`${
         navBg && !isNavOpened
-          ? 'desktop_nav_backdrop '
+          ? 'dark:desktop_nav_backdrop '
           : '-top-[100vh]'
-      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
+      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-light-text dark:text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
     >
-      <Logo />
+      {isDarkMode ? <Logo /> : <LogoIconDark />}
       <div className="hidden gap-10 items-center md:flex">
         {NavLinks.map((link, i) => (
           <Link

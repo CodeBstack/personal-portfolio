@@ -82,15 +82,15 @@ const ContactPage = ({ className }: Props) => {
         className="text-center items-center flex gap-4 md:gap-6 flex-col mb-[40px]"
       >
         <div className="text-center items-center flex gap-4 md:gap-6 flex-col">
-          <p className="font-SF2 text-secondary text-base md:mt4 md:text-xl">
+          <p className="font-SF2 text-secondary-dark dark:text-secondary text-base md:mt4 md:text-xl">
             <span className="mr-6">04.</span>{' '}
             What's Next?
           </p>
-          <h1 className="font-SF3 text-text-200 text-4xl md:text-6xl">
+          <h1 className="font-SF3 text-primary-dark dark:text-text-200 text-4xl md:text-6xl">
             Get In Touch
           </h1>
 
-          <p className=" w-full max-w-[300px] text-text-200 text-base md:text-xl">
+          <p className=" w-full max-w-[300px] text-light-text dark:text-text-200 text-base md:text-xl">
             Got a question or proposal, or just
             want to say hello? Go ahead.
           </p>
@@ -118,7 +118,7 @@ const ContactPage = ({ className }: Props) => {
           <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb3">
             <div className="w-full flex-1">
               <input
-                className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
+                className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
                 type="text"
                 placeholder="Name"
                 {...register('name', {
@@ -140,7 +140,7 @@ const ContactPage = ({ className }: Props) => {
 
             <div className="w-full flex-1">
               <input
-                className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
+                className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-light-text dark:placeholder-text-200 p-4"
                 type="text"
                 placeholder="Email"
                 {...register('email', {
@@ -163,7 +163,7 @@ const ContactPage = ({ className }: Props) => {
           </div>
 
           {/* <input
-            className="w-full bg-[#112240] font-SF1 placeholder-text-200 p-4"
+            className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-200 p-4"
             type="text"
             placeholder="Subject"
             {...register('subject', {
@@ -183,7 +183,7 @@ const ContactPage = ({ className }: Props) => {
           )} */}
 
           <textarea
-            className="w-full mt-3 bg-[#112240] font-SF1 placeholder-text-200 p-4"
+            className="w-full mt-3 bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
             placeholder="Message"
             rows={6}
             cols={50}
@@ -204,7 +204,7 @@ const ContactPage = ({ className }: Props) => {
           )}
 
           <button
-            className="px-4 py-2 mt-[30px] border border-secondary bg-transparent font-SF2 text-secondary rounded-[3px] text-sm self-center hover:bg-secondary hover:text-primary transition duration-500"
+            className="px-4 py-2 mt-[30px] border border-secondary-dark dark:border-secondary bg-transparent font-SF2 text-secondary-dark dark:text-secondary rounded-[3px] text-sm self-center hover:bg-secondary-dark hover:text-text-300 dark:hover:bg-secondary dark:hover:text-primary transition duration-500"
             type="submit"
           >
             Send Message
@@ -258,7 +258,7 @@ const ContactPage = ({ className }: Props) => {
             <MailIcon />{' '}
           </a>
         </div>
-        <p className="font-SF1 text-xs md:text-sm text-text-200 mb-2">
+        <p className="font-SF1 text-xs md:text-sm text-light-text dark:text-text-200 mb-2">
           Developed by Samuel Olumide
         </p>
 
@@ -266,15 +266,36 @@ const ContactPage = ({ className }: Props) => {
         <div className="flex md:hidden gap-2 items-center">
           <StarIcon
             fontSize="medium"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
           <StarIcon
             fontSize="medium"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
           <StarIcon
             fontSize="medium"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
         </div>
 
@@ -282,15 +303,36 @@ const ContactPage = ({ className }: Props) => {
         <div className="hidden md:flex gap-2 items-center">
           <StarIcon
             fontSize="large"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
           <StarIcon
             fontSize="large"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
           <StarIcon
             fontSize="large"
-            sx={{ color: '#64FFDA' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#64FFDA'
+                  : '#020A13'
+              }`,
+            }}
           />
         </div>
       </div>

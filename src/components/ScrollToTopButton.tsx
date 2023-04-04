@@ -43,7 +43,7 @@ function ScrollToTopButton() {
   return (
     <>
       <div
-        className={`transition-all duration-300 fixed bottom20 right5 z-[100] h-[32px] w-[32px] md:h-[50px] md:w-[50px] items-center justify-center rounded-[10px] bg-text-200 md:bottom-5 md:right-5 ${
+        className={`transition-all duration-300 fixed bottom20 right5 z-[100] h-[32px] w-[32px] md:h-[50px] md:w-[50px] items-center justify-center rounded-[10px] bg-light-text dark:bg-text-200 bottom-4 right-4 ${
           showButton ? 'flex' : 'hidden'
         }`}
         title="Scroll Button"
@@ -58,7 +58,14 @@ function ScrollToTopButton() {
         >
           <ArrowUpwardOutlined
             fontSize="medium"
-            sx={{ color: '#0A192F' }}
+            sx={{
+              color: `${
+                document.documentElement
+                  .className === 'dark'
+                  ? '#0A192F'
+                  : '#020A13'
+              }`,
+            }}
           />
         </IconButton>
       </div>

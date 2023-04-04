@@ -25,12 +25,32 @@ function App() {
   const [isDarkMode, setIsDarkMode] =
     useState<boolean>(true);
 
+  // const [theme, setTheme] = useState('dark');
+  // const element = document.documentElement;
+
+  // const darkQuery = window.matchMedia(
+  //   '(prefers-color-scheme:dark)'
+  // );
+
+  // const onWindowMatch () => {
+
+  // }
+
   useEffect(() => {
     const className = isDarkMode
       ? 'dark'
       : 'light';
     document.documentElement.className =
       className;
+    // if (theme === 'dark') {
+    //   element.classList.add('dark');
+    //   localStorage.setItem('theme', 'dark');
+    // } else if (theme === 'light') {
+    //   element.classList.remove('dark');
+    //   localStorage.setItem('theme', 'light');
+    // } else {
+    //   localStorage.removeItem('theme');
+    // }
   }, [isDarkMode]);
 
   return (
@@ -96,7 +116,7 @@ function App() {
           />
         </motion.div>
       </div>
-      <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-[#A8B2D1] hover:text-secondary rotate-90">
+      <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-light-text dark:text-[#A8B2D1] hover:text-secondary-dark dark:hover:text-secondary rotate-90">
         <a
           aria-label="Email Me"
           title="Email Me"
@@ -104,7 +124,7 @@ function App() {
         >
           ssamuelolumide@gmail.com
         </a>
-        <div className="h-px w-24 ml-10 bg-[#a8b2d1]"></div>
+        <div className="h-px w-24 ml-10 bg-primary-dark dark:bg-[#a8b2d1]"></div>
       </div>
 
       <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
