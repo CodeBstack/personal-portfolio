@@ -20,7 +20,7 @@ const Education: React.FunctionComponent<
               @ Yaba College of Technology
             </span>
           </p>
-          <p className="font-SF1 text-[13px] mb-4">
+          <p className="font-SF2 text-[13px] mb-4">
             May 2016 - December 2018
           </p>
           <p className="font-Calibre1 text-lg text-text-primary">
@@ -44,7 +44,7 @@ const Education: React.FunctionComponent<
               @ University of Lagos
             </span>
           </p>
-          <p className="font-SF1 text-[13px] mb-4">
+          <p className="font-SF2 text-[13px] mb-4">
             January 2020 - Present
           </p>
           <p className="font-Calibre1 text-lg text-text-primary">
