@@ -184,7 +184,7 @@ const ContactPage = ({ className }: Props) => {
           )}
 
           <button
-            className="px-4 py-2 mt-[30px] border border-secondary-dark dark:border-secondary bg-transparent font-SF2 text-secondary-dark dark:text-secondary rounded-[3px] text-sm self-center hover:bg-secondary-dark hover:text-text-300 dark:hover:bg-secondary dark:hover:text-primary transition duration-500"
+            className="px-4 py-2 mt-[30px] border border-secondary-dark dark:border-secondary bg-transparent font-SF2 text-secondary-dark dark:text-secondary rounded-[3px] text-sm self-center hover:bg-secondary-dark hover:text-text-300 dark:hover:bg-secondary dark:hover:text-primary transition duration-500 ease"
             type="submit"
           >
             Send Message
