@@ -38,7 +38,7 @@ const AboutPage: React.FunctionComponent<
       id="about"
     >
       <motion.div
-        className="flex  gap-4 items-center md:mb-5 flex-wrap"
+        className="flex  gap-4 items-center md:mb-12 flex-wrap"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -68,7 +68,7 @@ const AboutPage: React.FunctionComponent<
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0 },
         }}
-        className="mt-0 flex  w-full flex-col md:flex-row md:justify-start md:gap-9 md:px-8"
+        className="mt-0 flex  w-full flex-col md:flex-row md:justify-start md:gap-9"
       >
         <div className="flex flex-col gap-y-5">
           {/* mobile  */}
@@ -98,7 +98,7 @@ const AboutPage: React.FunctionComponent<
           <div
             className="hidden h-fit min-w-max flex-col
              flex-wrap justify-between
-            md:flex md:gap-0 md:px- "
+            md:flex md:gap-0 "
           >
             {steps.map((value) => (
               <button
@@ -110,9 +110,9 @@ const AboutPage: React.FunctionComponent<
                 className="flex items-center gap-4"
               >
                 <span
-                  className={`font-SF2 border-l px-5 py-3  text-[16px] font-medium  ${
+                  className={`font-SF2 border-l-[3px] px-5 py-3  text-[16px] font-medium  ${
                     presentStep === value.id
-                      ? 'border-l border-secondary-dark dark:border-secondary text-secondary-dark dark:text-secondary'
+                      ? 'border-secondary-dark dark:border-secondary text-secondary-dark dark:text-secondary'
                       : 'border-[#CCD6F6] dark:border-[#233554] text-light-text dark:text-text-primary'
                   } `}
                 >

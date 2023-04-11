@@ -7,7 +7,7 @@ const Bio: React.FunctionComponent<
   BioProps
 > = () => {
   return (
-    <div className="flex flex-col gap-16 lg:flex-row  lg:gap8">
+    <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
       <p className="flex-1 font-Calibre1 text-light-text dark:text-text-primary text-base md:text-xl max-w-[450px]">
         I'm an extremely ambitious Front-end
         developer looking for a position in a
@@ -21,7 +21,7 @@ const Bio: React.FunctionComponent<
       </p>
       <div className="flex-1  max-w-[450px] lg:mt12 ">
         <div
-          className=" self-centr mx-auto md:mx-0 z[2] relative min-h-[269px] max-h-[269px] min-w-[292px] rounded-[10px] max-w-[292px] before:bg-secondary before:absolute before:-top-[10px] before:-right-[10px] before:rounded-[7px]
+          className=" self-centr mx-auto md:mx-0 z-[1] relative min-h-[269px] max-h-[269px] min-w-[292px] rounded-[10px] max-w-[292px] before:bg-secondary before:absolute before:-top-[10px] before:-right-[10px] before:rounded-[7px]
             before:w-full before:max-w-[292px] before:h-full before:z-[-1]"
         >
           <img

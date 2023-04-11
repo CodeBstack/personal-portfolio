@@ -54,7 +54,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <main className="relative max-w-[1440px] mx-auto text-text-primary transition-all duration-500 dark:bg-primary bg-white">
+    <main className="relative max-w-[1500px] mx-auto text-text-primary transition-all duration-500 dark:bg-primary bg-white">
       <div
         className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'
@@ -70,7 +70,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mxauto  px-4 sm:px-6 pb-14 md:px-[10%]">
+      <div className="mxauto  px-4 sm:px-6 pb-14 md:px-[5%] lg:px-[220px]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')
@@ -116,7 +116,7 @@ function App() {
           />
         </motion.div>
       </div>
-      <div className="hidden md:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-light-text dark:text-[#A8B2D1] hover:text-secondary-dark dark:hover:text-secondary rotate-90">
+      <div className="hidden lg:flex max-w-fit items-center fixed top-[70%] -right-28  font-SF1 text-sm md:text-base text-light-text dark:text-[#A8B2D1] hover:text-secondary-dark dark:hover:text-secondary rotate-90">
         <a
           aria-label="Email Me"
           title="Email Me"
@@ -127,7 +127,7 @@ function App() {
         <div className="h-px w-24 ml-10 bg-primary-dark dark:bg-[#a8b2d1]"></div>
       </div>
 
-      <div className="hidden md:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-[5%] ">
+      <div className="hidden lg:flex flex-col max-w-[24px] gap-7 items-center fixed top-[53%] left-4 sm:left-6 md:left-[55px] ">
         <a
           aria-label="Go to Samuel Olumide Github page"
           title="Github page"

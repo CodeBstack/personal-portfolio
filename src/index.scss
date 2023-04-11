@@ -97,8 +97,14 @@ code {
     }
 }
 
-.desktop_nav_backdrop {
+.desktop_nav_backdrop_dark {
     background: rgba(10, 25, 47, 0.85);
+    box-shadow: 0px 10px 30px -10px rgba(2, 12, 27, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.desktop_nav_backdrop_light {
+    background: grey;
     box-shadow: 0px 10px 30px -10px rgba(2, 12, 27, 0.7);
     backdrop-filter: blur(10px);
 }
@@ -137,8 +143,8 @@ code {
 }
 
 .footer_socials {
-     display: flex;
-     max-width: 278px;
+    display: flex;
+    max-width: 278px;
     -webkit-box-align: center;
     align-items: center;
     justify-content: space-between;

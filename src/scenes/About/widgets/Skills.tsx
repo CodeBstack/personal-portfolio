@@ -13,8 +13,8 @@ const Skills: React.FunctionComponent<
   Props
 > = () => {
   return (
-    <div className="flex flex-col gap-16 lg:flex-row  lg:gap-8">
-      <ul className="flex-1 font-SF2 md:mt10 text-light-text dark:text-text-200 text-base grid grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-4 md:gap-y-6">
+    <div className="flex flex-col gap-16 lg:flex-row lg:justtify-between  lg:gap-8 ">
+      <ul className="flex-1 font-SF2 text-light-text dark:text-text-200 text-base grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-x-4 lg:gap-x-6 gap-y-4 md:gap-y-6 md:max--[70%]">
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           HTML
@@ -64,7 +64,7 @@ const Skills: React.FunctionComponent<
           GRAPHQL
         </li>
       </ul>
-      <div className="flex-1  max-w-[450px] mb-48 lg:mb-0 lg:mt-8 ">
+      <div className="flex-1 max-w-[450px] mb-48 lg:mb-0 lg:mt-8 ">
         <div className="cubespinner">
           <div className="face1">
             <FaHtml5 color="#F06529" />

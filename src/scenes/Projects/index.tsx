@@ -124,7 +124,7 @@ const ProjectsPage: React.FunctionComponent<
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="flex gap-4 md:gap-6 items-center">
+        <div className="flex lg:ml-[185px] gap-4 md:gap-6 items-center">
           <h1 className="text-light-text dark:text-secondary text-[26px] md:text-[32px]  font-SF2 ">
             02.
           </h1>
@@ -132,7 +132,7 @@ const ProjectsPage: React.FunctionComponent<
             Projects
           </h1>
         </div>
-        <div className="h-px bg-primary-dark dark:bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[395px]"></div>
+        <div className="h-px bg-primary-dark dark:bg-[#CCD6F6] w-full max-w-[148px] md:max-w-[305px]"></div>
       </motion.div>
 
       <motion.div
@@ -140,7 +140,7 @@ const ProjectsPage: React.FunctionComponent<
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 md:flex flex-col gap-5 md:gap-[104px]"
+        className="grid sm:grid-cols-2 md:flex flex-col gap-4 md:gap-[104px]"
       >
         {projects.map((project) => (
           <EachProject
@@ -166,7 +166,7 @@ const ProjectsPage: React.FunctionComponent<
 
         {/* <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]"> */}
         <motion.div
-          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md2:grid-cols-3 gap-5 md:gap-8"
+          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md2:grid-cols-3 gap-4"
           variants={container}
           initial="hidden"
           whileInView="visible"

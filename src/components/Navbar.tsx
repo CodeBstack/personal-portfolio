@@ -90,14 +90,23 @@ const NavBar: React.FunctionComponent<
       );
     };
   }, []);
-
+  if (
+    document.documentElement.className === 'dark'
+  ) {
+    console.log(true);
+  }
   return (
     <nav
       className={`${
         navBg && !isNavOpened
-          ? 'dark:desktop_nav_backdrop '
+          ? `${
+              document.documentElement
+                .className === 'dark'
+                ? 'desktop_nav_backdrop_dark'
+                : 'desktop_nav_backdrop_light'
+            } `
           : '-top-[100vh]'
-      } z-[100] px-[5%] w-full py-4 md:py-6 flex items-center justify-between font-SF1 text-light-text dark:text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
+      } z-[100] p-4 sm:px-6 md:px:[5%] lg:px-[55px] w-full md:py-6 flex items-center justify-between font-SF1 text-light-text dark:text-nav-text text-[13px] fixed top-0  transition-all duration-200 md:text-sm`}
     >
       {isDarkMode ? <Logo /> : <LogoIconDark />}
       <div className="hidden gap-10 items-center md:flex">
@@ -139,7 +148,7 @@ const NavBar: React.FunctionComponent<
 
       {/* MOBILE NAV SIDEBAR */}
       <aside
-        className={`flex md:hidden px-[7%] overflow-yauto transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-[#112240] ${
+        className={`flex md:hidden px-[7%] transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-[#112240] ${
           isNavOpened
             ? 'right-0 w-[70%]'
             : '-right-[100vw]'

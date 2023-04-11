@@ -115,7 +115,7 @@ const ContactPage = ({ className }: Props) => {
           // method="POST"
           className="flex flex-col"
         >
-          <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 mb3">
+          <div className="flex flex-col justify-start items-center md:flex-row md:justify-between gap-3 lg:gap-6">
             <div className="w-full flex-1">
               <input
                 className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
@@ -162,28 +162,8 @@ const ContactPage = ({ className }: Props) => {
             </div>
           </div>
 
-          {/* <input
-            className="w-full bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-200 p-4"
-            type="text"
-            placeholder="Subject"
-            {...register('subject', {
-              required: true,
-              maxLength: 200,
-            })}
-          />
-          {errors.subject && (
-            <p className="text-error mt-1">
-              {errors.subject.type ===
-                'required' &&
-                'This field is required.'}
-              {errors.subject.type ===
-                'maxLength' &&
-                'Max length is 200 char.'}
-            </p>
-          )} */}
-
           <textarea
-            className="w-full mt-3 bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
+            className="w-full mt-3 lg:mt-10 bg-primary-dark dark:bg-[#112240] font-SF1 placeholder-text-light-text dark:placeholder-text-200 p-4"
             placeholder="Message"
             rows={6}
             cols={50}
