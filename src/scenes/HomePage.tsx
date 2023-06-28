@@ -35,7 +35,7 @@ const HomePage: React.FunctionComponent<
 
   return (
     <section
-      className="relative pt-[30%] md:pt-[0%] text-light-text dark:text-text-primary flex justify-centr items-center mb[44px] md:mb-0 md:h-screen"
+      className="relative pt-[70px] md:pt-[100px] mdpt-[0%] text-light-text dark:text-text-primary flex justify-centr itemscenter mb[44px] md:mb-0 md:h-screen"
       id="home"
     >
       <div>
@@ -80,9 +80,9 @@ const HomePage: React.FunctionComponent<
             idx={21}
           />
         </h1>
-        <h1 className="heading_2 font-Calibre3 text-light-text dark:text-text-primary text-2xl max-w-[90%] md:max-w-[65%] md:text-5xl">
-          I build interactive  user
-          interfaces and experience.
+        <h1 className="heading_2 font-Calibre3 text-light-text dark:text-text-primary text-2xl max-w-[724px] md:text-6xl">
+          I create engaging, <br />
+          interactive user interfaces.
         </h1>
 
         <p className="anime_homepage_text max-w-[540px] font-Calibre1 text-lg  text-light-text dark:text-text-primary md:text-xl mt-3 ">

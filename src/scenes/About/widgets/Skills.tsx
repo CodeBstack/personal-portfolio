@@ -49,12 +49,16 @@ const Skills: React.FunctionComponent<
         </li>
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
-          NEXT JS
+          REACT NATIVE
         </li>
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
-          REDUX
+          NEXT JS
         </li>
+        {/* <li className="flex gap-2 items-center">
+          <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
+          REDUX
+        </li> */}
         <li className="flex gap-2 items-center">
           <span className="rounded-full bg-light-text dark:bg-text-200 w-[6px] h-[6px]"></span>{' '}
           REDUX TOOLKIT

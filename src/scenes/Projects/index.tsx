@@ -110,7 +110,7 @@ const ProjectsPage: React.FunctionComponent<
 > = ({className}) => {
   return (
     <section
-      className={`projects min-h-screen  relative mb-[44px] md:mb-0 ${className}`}
+      className={`projects min-h-screen flex justify-center flex-col  relative mb-[44px] md:mb-0 ${className}`}
       id="projects"
     >
       <motion.div

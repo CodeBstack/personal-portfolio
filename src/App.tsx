@@ -13,7 +13,7 @@ import ProjectsPage from './scenes/Projects';
 import ResumePage from './scenes/ResumePage';
 import ContactPage from './scenes/ContactPage';
 import { motion } from 'framer-motion';
-import MailIcon from './components/Vectors/MailIcon';
+// import MailIcon from './components/Vectors/MailIcon';
 
 function App() {
   const [selectedPage, setSelectedPage] =
@@ -54,7 +54,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <main className="relative max-w-[1500px] mx-auto text-text-primary transition-all duration-500 dark:bg-primary bg-white">
+    <main className="relative text-text-primary transition-all duration-500 dark:bg-primary bg-white">
       <div
         className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${
           isNavOpened ? 'block ' : 'hidden'
@@ -70,7 +70,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="mxauto  px-4 sm:px-6 pb-14 md:px-[5%] lg:px-[220px]">
+      <div className="max-w-[1500px] mx-auto  px-4 sm:px-6 pb-14 md:px-[5%] lg:px-[220px]">
         <motion.div
           onViewportEnter={() =>
             setSelectedPage('home')

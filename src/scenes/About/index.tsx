@@ -1,4 +1,3 @@
-import { Tooltip } from '@mui/material';
 import { useState } from 'react';
 import Bio from './widgets/Bio';
 import Education from './widgets/Education';
@@ -19,29 +18,29 @@ const AboutPage: React.FunctionComponent<
   interface StepComponents {
     1: JSX.Element;
     2: JSX.Element;
-    3: JSX.Element;
-    4: JSX.Element;
-    5: JSX.Element;
+    // 3: JSX.Element;
+    // 4: JSX.Element;
+    // 5: JSX.Element;
   }
 
   let stepComponents: StepComponents = {
     1: <Bio />,
     2: <Skills />,
-    3: <Education />,
-    4: <Experience />,
-    5: <Passion />,
+    // 3: <Experience />,
+    // 4: <Education />,
+    // 5: <Passion />,
   };
 
   return (
     <section
-      className={`md:min-hscreen mb10 lg:mb-20 pt-[25%] md:pt-[100px]  relatve md:mb-0 ${className}`}
+      className={`h-screen mb10 lg:mb20 flex justify-center flex-col pt-[100px] lg:pt-[0px]  relatve md:mb-0 ${className}`}
       id="about"
     >
       <motion.div
         className="flex  gap-4 items-center md:mb-12 flex-wrap"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 } }
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -144,17 +143,17 @@ const steps = [
     title: 'Skills',
     id: 2,
   },
-  {
-    title: 'Education',
-    id: 3,
-  },
-
-  {
-    title: 'Experience',
-    id: 4,
-  },
-  {
-    title: 'Passion',
-    id: 5,
-  },
+  
+  // {
+  //   title: 'Experience',
+  //   id: 3,
+  // },
+  // {
+  //   title: 'Education',
+  //   id: 4,
+  // },
+  // {
+  //   title: 'Passion',
+  //   id: 5,
+  // },
 ];

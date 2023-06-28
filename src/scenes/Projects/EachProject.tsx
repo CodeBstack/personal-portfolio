@@ -6,6 +6,7 @@ import { truncateString } from './data';
 interface EachProjectProps {
   data: {
     imgUrl?: string;
+    vidUrl?: string;
     skills?: string[];
     layout?: string;
     projectTitle?: string;
@@ -18,8 +19,8 @@ interface EachProjectProps {
 const EachProject: React.FunctionComponent<
   EachProjectProps
 > = ({ data }) => {
-  const overlayStyles = `absolute h-full w-full opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-end p-6 `;
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+  bg-[#233554] hover:bg-[#020A13] z-30 flex flex-col justify-end p-6 `;
 
   return (
     <>
@@ -33,7 +34,7 @@ const EachProject: React.FunctionComponent<
       >
         <div className={overlayStyles}>
           <p className="font-SF2 text-secondary-dark dark:text-secondary mb-2 text-[13px]">
-            Featured Projects
+            Featured Project
           </p>
           <p className="font-Calibre2 text-primary-dark dark:text-text-200 text-[24px]">
             {data.projectTitle}
@@ -86,11 +87,32 @@ const EachProject: React.FunctionComponent<
             </a>
           </div>
         </div>
-        <img
+        {/* <img
           className={`bg-[#020A13] dark:bg-[#233554] h-full object-cover`}
           src={`${data.imgUrl}`}
           alt={data.projectTitle}
-        />
+        /> */}
+        {data?.imgUrl ? (
+          <img
+            // className="!h-full !w-full absolute top-0 right-0 object-ver"
+            // className={`${
+            //   data.layout === 'reverse' &&
+            //   '-ml-10'
+            // } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+            src={data.imgUrl}
+            alt={data.projectTitle}
+          />
+        ) : data?.vidUrl ? (
+          <video
+            src={data?.vidUrl}
+            autoPlay
+            loop
+            // height="100%"
+          >
+            Sorry, your browser doesn't support
+            embedded videos.
+          </video>
+        ) : null}
         {/* <div
           className={`bg-[#020A13 dark:bg-[#233554] h-full max-wpx]`}
         ></div> */}
@@ -110,17 +132,38 @@ const EachProject: React.FunctionComponent<
         {/* <div
           className={`${
             data.layout === 'reverse' && '-ml-10'
-          } bg-[#020A13!dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+          } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] hfull z[-1] relative  w-1/2 max-w-[580px] objectcover`}
         > */}
-        <img
-          // className="!h-full !w-full absolute top-0 right-0 object-ver"
-          className={`${
-            data.layout === 'reverse' && '-ml-10'
-          } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
-          src={data.imgUrl}
-          alt={data.projectTitle}
-        />
+        {data?.imgUrl ? (
+          <img
+            // className='object-cover h-auto w-full'
+            // className="!h-full !w-full absolute top-0 right-0 object-ver"
+            className={`${
+              data.layout === 'reverse' &&
+              '-ml-10'
+            } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] object-cover`}
+            src={data.imgUrl}
+            alt={data.projectTitle}
+          />
+        ) : data?.vidUrl ? (
+          <video
+            src={data?.vidUrl}
+            autoPlay
+            loop
+            // height="100%"
+            // className="object-cover !h-full w-full"
+            className={`${
+              data.layout === 'reverse' &&
+              '-ml-10'
+            } bg-[#020A13] !dark:bg-[#233554] min-h-[360px] z[-1] relative  w-1/2 max-w-[580px] h-auto object-contain aspect-auto`}
+            // width="100%"
+          >
+            Sorry, your browser doesn't support
+            embedded videos.
+          </video>
+        ) : null}
         {/* </div> */}
+
         <div
           className={` flex-1 flex z-[1] ${
             data.layout === 'normal'

@@ -1,6 +1,7 @@
 interface Projects {
   id?: number;
   imgUrl?: string;
+  vidUrl?: string;
   skills?: string[];
   layout?: string;
   projectTitle?: string;
@@ -23,44 +24,45 @@ export const truncateString = (
 export const projects: Projects[] = [
   {
     id: 1,
-    imgUrl: '',
+    vidUrl: '/videos/cms_blog.mp4',
     skills: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'TypeScript',
+      'NextJS',
+      'SASS',
+      'Graph QL',
+      'TailwindCSS',
     ],
     layout: 'normal',
     projectDesc:
-      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
-    projectTitle: 'Advanced Calculator',
-    projectRepoLink: '#',
-    projectDemoLink: '#',
+      'Built a fully responsive CMS blog app with featured posts, recent posts, categories and also with full markdown articles, author information, comments and so on.',
+    projectTitle: 'CMS Blog Application',
+    projectRepoLink:
+      'https://github.com/CodeBstack/cms-blog-app',
+    projectDemoLink:
+      'https://codebstack-blog-app.vercel.app/',
   },
   {
     id: 2,
-    imgUrl: '',
+    vidUrl: '/videos/coingecko_clone.mp4',
     skills: [
       'HTML',
       'CSS',
       'JavaScript',
-      'TypeScript',
+      'React Query',
     ],
     layout: 'reverse',
     projectDesc:
-      'Lorem ipsum dolor sit amet consectetur. Aliquam donec justo fames euismod consectetur. Enim parturien pulvinar semper neque. Id ac pretium leo non. Fringill',
-    projectTitle: 'Weather Information',
-    projectRepoLink: '#',
-    projectDemoLink: '#',
+      'This the clone of the coingecko crypto app homepage clone featuring the lists of coins, search functionality and more.',
+    projectTitle: 'Coingecko app clone',
+    projectRepoLink: 'https://github.com/CodeBstack/coingecko-clone',
+    projectDemoLink: 'https://coingecko-homepage-clone.netlify.app/',
   },
   {
     id: 3,
-    imgUrl: '',
-    // '/images/Manage-landing-page.png',
+    vidUrl: '/videos/manage_landing.mp4',
     skills: ['HTML', 'CSS', 'TailwindCss'],
     layout: 'normal',
     projectDesc:
-      'A single page website built with TailwindCss which is mobile first responsive.',
+      'A single page website built with TailwindCss which is mobile first responsive. Project inspiration gotten from frontend mentor.',
     projectTitle: 'Manage Landing Page',
     projectRepoLink:
       'https://github.com/CodeBstack/LandingPage-tailwind',
