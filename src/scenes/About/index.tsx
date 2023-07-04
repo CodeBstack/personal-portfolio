@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Bio from './widgets/Bio';
-import Education from './widgets/Education';
-import Experience from './widgets/Experience';
-import Passion from './widgets/Passion';
+// import Education from './widgets/Education';
+// import Experience from './widgets/Experience';
+// import Passion from './widgets/Passion';
 import Skills from './widgets/Skills';
 import { motion } from 'framer-motion';
+
 interface AboutPageProps {
   className: string;
 }
