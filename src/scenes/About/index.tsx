@@ -34,7 +34,7 @@ const AboutPage: React.FunctionComponent<
 
   return (
     <section
-      className={`h-screen mb10 lg:mb20 flex justify-center flex-col pt-[100px] lg:pt-[0px]  relatve md:mb-0 ${className}`}
+      className={`min-h-screen mb10 lg:mb20 flex justify-center flex-col pt-[100px] lgpt-[0px]  relatve md:mb-0 ${className}`}
       id="about"
     >
       <motion.div

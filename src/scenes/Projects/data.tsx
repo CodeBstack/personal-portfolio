@@ -51,8 +51,8 @@ export const projects: Projects[] = [
     ],
     layout: 'reverse',
     projectDesc:
-      'This the clone of the coingecko crypto app homepage clone featuring the lists of coins, search functionality and more.',
-    projectTitle: 'Coingecko app clone',
+      'This the clone of the coingecko crypto app homepage clone featuring the paginated lists of coins, search functionality and more.',
+    projectTitle: 'Coingecko app homepage clone',
     projectRepoLink: 'https://github.com/CodeBstack/coingecko-clone',
     projectDemoLink: 'https://coingecko-homepage-clone.netlify.app/',
   },

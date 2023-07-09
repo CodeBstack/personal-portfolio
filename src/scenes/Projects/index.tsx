@@ -103,11 +103,13 @@ const Project = ({ data }: ProjectProps) => {
   );
 };
 
-interface ProjectsPageProps {className:string}
+interface ProjectsPageProps {
+  className: string;
+}
 
 const ProjectsPage: React.FunctionComponent<
   ProjectsPageProps
-> = ({className}) => {
+> = ({ className }) => {
   return (
     <section
       className={`projects min-h-screen flex justify-center flex-col  relative mb-[44px] md:mb-0 ${className}`}
@@ -150,7 +152,7 @@ const ProjectsPage: React.FunctionComponent<
         ))}
       </motion.div>
 
-      <div className="mt-28 md:mt-60 text-center">
+      <div className="mt-16 md:mt-36 text-center">
         <h2 className="font-Calibre2 text-secondary-dark dark:text-text-200 text-2xl text-[32px]">
           Other Projects Worth Noting
         </h2>
@@ -158,14 +160,16 @@ const ProjectsPage: React.FunctionComponent<
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to my github respository"
+          title="Github repository"
           href="https://github.com/CodeBstack?tab=repositories"
           className="font-SF1 text-secondary-dark dark:text-secondary mt-2"
         >
-          View my archive
+          View my archive (Github)
         </a>
 
         {/* <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]"> */}
-        <motion.div
+        {/* <motion.div
           className="mt-16 grid grid-cols-1 sm:grid-cols-2 md2:grid-cols-3 gap-4"
           variants={container}
           initial="hidden"
@@ -175,7 +179,7 @@ const ProjectsPage: React.FunctionComponent<
           {projects2.map((project, i) => (
             <Project key={i} data={project} />
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
